@@ -21,7 +21,29 @@
                         with you by the website www.informationisbeautiful.net. It's absolutely astonishing to almost anyone
                         who didn't see it before. In this blog, we are going to dive into information security and talk about
                         how they are applied at four different layers: network, system, application and data.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    <a href="javascript:void(0)" class="btn btn-default btn-lg" ng-model="expand1" ng-hide="expand1" ng-click="expand1=true">More...</a>
+                    <div class="text-justify" ng-show="expand1">
+                        <p>For end user, information security is about protecting personal digital devices against virus and malware. In enterprise world, information security applies to network, software, hardware, data, operating personnel and operation procedures. the challenges and solutions can be broken into the following categories:
+                        </p>
+
+                        <ul>
+                            <li><strong>Network Security:</strong> viruses and malware traverse through the network and attack operating system, software, hardware and data storage. It also causes harm to the normal network operation. The solution typically relies on network security appliances inspecting the traffic pattern and compare that with previously identified virus/malware signatures. Once positively identified, the appliance will block the traffic getting into the next layer system. The appliances typically are firewall, anti-virus, anti-malware and intrusion prevention systems. Traditional solutions are far from satisfactory as up to 90% alert are false alert, according to a recent Gartner report.
+                            </li>
+                            <br>
+                            <li><strong>System and Data Security:</strong> virus and malware can cause system and data corruption, resulting in service and data loss. Another source of threat comes from external hacker and corporate insiders who steal or change sensitive information. To prevent these threat, company should keep operating system and anti-virus software up to date,  deploy disaster recover site, encrypt sensitive data and properly manage data backup.
+                            </li>
+                            <br>
+                            <li><strong>Information Security Management:</strong> provides account, authentication, authorization and auditing services. The subjects under this category include end user, service account and API. Account service is very business specific and responsible for the subjects' life cycle management. Sometimes it's also called user provisioning and user management. Authentication has many different methods, including but not limited to, username/password, kerberos, x509 certificate, ip address, biometric methods (eye print, iris, fingerprint and voice). Authentication can be further enhanced with a second factor, such as one time toke. Auditing is used to record what people did where and at what time. It's an important aspect for compliance management. API Gateway centralizes API management. A business can build an API once and used by different clients in a standard deployment. The growth in this area has been driven by mobile application development. API gateway also provides a single point for policy enforcement, auditing, logging and other functionalities. It greatly simplifies the development and deployment.
+                            </li>
+                            <br>
+                            <li><strong>Policy Management:</strong> relates to the common and business specific security policy and procedures. It offers the capability to dynamically enforce the policies in runtime workflow. All three areas above overlap in this area.
+                            </li>
+                        </ul>
+
+                        <p>In the next post, we will discuss how the information security manifests itself in the cloud security.</p>
+
+                        <a href="javascript:void(0)" class="btn btn-default btn-lg" ng-click="expand1=false">Less...</a>
+                    </div>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
