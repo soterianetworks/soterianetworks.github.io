@@ -1,13 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1 class="brand-heading"><img src="img/1_vertical.png" style="height: 50%; width: 50%;"/></h1>
+            <h1 class="brand-heading"><img src="img/1_vertical.png" style="height: 20%; width: 20%;"/></h1>
             <div ng-controller="IntroCarousel">
                 <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <img ng-src="{{slide.image}}" style="margin:auto;height:350px;width:80%;">
                         <div class="carousel-caption">
-                            <h4>Slide {{slide.id}}</h4>
                             <p>{{slide.text}}</p>
                         </div>
                     </uib-slide>

@@ -5,12 +5,13 @@ angular.module('www')
 });
 
 angular.module('www')
-   .controller('IntroCarousel', function($scope) {
+   .controller('IntroCarousel', function($scope, $location) {
       $scope.myInterval = 3000;
       $scope.noWrapSlides = false;
       $scope.active = 0;
       var slides = $scope.slides = [];
       var currIndex = 0;
+      var basePath = $location.absUrl().split('#')[0];
 
       addSlide('img/abstract-1278061_1920.jpg');
       addSlide('img/ball-457334.jpg');
@@ -18,7 +19,7 @@ angular.module('www')
 
       function addSlide(imgPath) {
         slides.push({
-          image: imgPath,
+          image: basePath+imgPath,
           text: ['Application Security','Data Security','IoT Security','Value & Delivery'][slides.length % 4],
           id: currIndex++
         });
