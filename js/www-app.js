@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('www', ['ui.router'])
+angular.module('www', ['ui.router','ui.bootstrap'])
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('app',{
             url: '/',

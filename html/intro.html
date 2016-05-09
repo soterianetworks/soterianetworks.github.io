@@ -1,8 +1,18 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h1 class="brand-heading">NubeSecure</h1>
-            <p class="intro-text">Providing Application & Data Security</p>
+            <h1 class="brand-heading"><img src="img/1_vertical.png" style="height: 50%; width: 50%;"/></h1>
+            <div ng-controller="IntroCarousel">
+                <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <h4>Slide {{slide.id}}</h4>
+                            <p>{{slide.text}}</p>
+                        </div>
+                    </uib-slide>
+                </uib-carousel>
+            </div>
             <a href="#/#aboutus" class="btn btn-circle page-scroll">
                 <i class="fa fa-angle-double-down animated"></i>
             </a>
