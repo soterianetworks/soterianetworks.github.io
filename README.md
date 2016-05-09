@@ -1,2 +1,4 @@
+TODO: Until domain is pointed to 
 # www.soterianetworks.com
-TODO: Until domain is pointed, goto nubesecure.bitbucket.org
+Goto:
+# nubesecure.bitbucket.org
