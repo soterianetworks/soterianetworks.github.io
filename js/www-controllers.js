@@ -13,9 +13,9 @@ angular.module('www')
       var currIndex = 0;
       var basePath = $location.absUrl().split('#')[0];
 
-      addSlide('img/abstract-1278061_1920.jpg');
-      addSlide('img/ball-457334.jpg');
-      addSlide('img/binary-1332816_1920.jpg');
+      addSlide('img/abstract-1278061_1920.326x230.png');
+      addSlide('img/ball-457334.320x180.png');
+      addSlide('img/binary-1332816_1920.326x108.png');
 
       function addSlide(imgPath) {
         slides.push({
