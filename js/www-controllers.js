@@ -61,3 +61,10 @@ angular.module('www')
         return array;
       }
   });
+
+ angular.module('www')
+    .controller('AboutCarousel', function($scope) {
+      $scope.myInterval = 5000;
+
+      //TODO: Customize
+ });
