@@ -25,7 +25,7 @@ angular.module('www')
         });
       };
 
-      // Randomize logic below
+      //TODO: Randomize logic below
       function randomize() {
         var indexes = generateIndexesArray();
         assignNewIndexesToSlides(indexes);
@@ -61,3 +61,13 @@ angular.module('www')
         return array;
       }
   });
+
+ angular.module('www')
+    .controller('AboutCarousel', function($scope) {
+
+      //TODO: Customize
+      $scope.slides = ['The scope for identity and access management has shifted with the advance of mobility usage pattern, cloud technology and internet of things. We are ready to consolidate the identities of user and internet of things. The marching order for refined access control and risk management at API level is on.'
+      ,'Data breaching has shifted from outside intrusion to insider act, this is what keeps the chief information security officers awake at night. Cloud hosting will only exacerbate this situation. Even if we encrypt the data at rest, it is only as safe as how we manage the encryption keys in a live system. A solution tightly integrated with the identity management is the solution.'
+      ,'Soteria Networks is a cloud security product and service provider. All the founding members have been hands-on engineers for over 15 years. With successful delivery of several security products behind us, we are passionate about application and data security and are actively developing a product suite with the goal to provide premium services in the cloud space.'];
+
+ });
