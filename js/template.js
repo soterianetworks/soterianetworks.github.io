@@ -232,7 +232,7 @@
 			$('.slider-banner-container .slider-banner-fullwidth').show().revolution({
 				delay:8000,
 				startwidth:1140,
-				startheight:450,
+				startheight:350,
 
 				navigationArrows:"solo",
 
