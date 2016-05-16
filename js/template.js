@@ -1349,8 +1349,13 @@
 				submitHandler: function(form) {
 					$('.submit-button').button("loading");
 					$.ajax({
+/*
 						type: "POST",
 						url: "php/email-sender.php",
+*/
+						method: "POST",
+                        url: "//formspree.io/info@soterianetworks.com",
+
 						data: {
 							"name": $("#contact-form #name").val(),
 							"email": $("#contact-form #email").val(),
@@ -1358,6 +1363,7 @@
 							"message": $("#contact-form #message").val()
 						},
 						dataType: "json",
+/*
 						success: function (data) {
 							if (data.sent == "yes") {
 								$("#MessageSent").removeClass("hidden");
@@ -1370,6 +1376,19 @@
 								$("#MessageNotSent").removeClass("hidden");
 								$("#MessageSent").addClass("hidden");
 							}
+						}
+*/
+						success: function (data) {
+								$("#MessageSent").removeClass("hidden");
+								$("#MessageNotSent").addClass("hidden");
+								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Message Sent');
+								$("#contact-form .form-control").each(function() {
+									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
+								});
+						}
+						,error: function (err) {
+								$("#MessageNotSent").removeClass("hidden");
+								$("#MessageSent").addClass("hidden");
 						}
 					});
 				},
