@@ -5735,6 +5735,7 @@ header.full-width .animated.main-navigation .dropdown-menu .open .dropdown-menu.
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 .offcanvas .logo {
   margin: 20px 0 10px;
