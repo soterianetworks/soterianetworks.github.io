@@ -5727,9 +5727,9 @@ header.full-width .animated.main-navigation .dropdown-menu .open .dropdown-menu.
 }
 .site-slogan {
   color: #777777;
-  font-size: 11px;
+  font-size: 1.1em;
   padding: 3px 0 0;
-  font-weight: 300;
+  font-weight: 320;
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transition: all 0.3s ease-in-out;
