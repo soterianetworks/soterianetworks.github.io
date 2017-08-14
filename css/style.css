@@ -425,6 +425,7 @@ tbody {
 }
 .header {
   border-top: 1px solid #ffffff;
+  margin-bottom: 3px;
   background-color: #fcfcfc;
 }
 .header.dark {
