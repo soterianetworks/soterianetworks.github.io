@@ -263,12 +263,12 @@
 								<div class="panel panel-default" >
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" expanded="true">
+											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" class="collapsed">
 												PUF
 											</a>
 										</h4>
 									</div>
-									<div id="accord-chip1" class="panel-collapse in">
+									<div id="accord-chip1" class="panel-collapse collapse">
 										<div class="panel-body">
 											PUF, namely physically unclonable functionality, is the “silicon biometrics” that exploit the intrinsic and ubiquitous variations in semiconductor integrated circuits (IC) to generate random but unique, unpredictable while reproducible, and most importantly, unclonable hardware fingerprints. Even under the identical manufacture process, each IC is actually different due to the physical variability stemmed from the ultra-large scale integration (hundreds of millions of transistors integrated into one silicon chip) and uncontrollable non-uniformity in nanoscale device characteristics. PUF leverages this physical variability for low-cost, small-footprint, energy-efficient authentication and cryptographic key generation suitable for IoT platforms.
 											<br><br>
@@ -496,8 +496,11 @@
 					<h3>Case Study</h3>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>Electric Grid Field Operation Monitoring</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy1" aria-expanded="false" aria-controls="casestudy1" class="collapsed">
+							Electric Grid Field Operation Monitoring
+							<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i>
+						</h4>
+						<p class="collapse" id="casestudy1">
 							Personal casualty is a great concern in high-voltage electric grid field construction. For compliance purpose, the customer
 							needs to record the field activities. Realtime monitoring is preferred when wireless signal, such as 3G/4G, is available,
 							otherwise, the video should be kept in the recording unit for late processing. An existing proposal based on VPN and H.264
@@ -508,8 +511,11 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning">
-						<h4>Railway Foreign Object Intrusion Detection</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy2" aria-expanded="false" aria-controls="casestudy2" class="collapsed">
+							Railway Foreign Object Intrusion Detection
+							<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i>
+						</h4>
+						<p class="collapse" id="casestudy2">
 							Foreign objects enter railway tracks and can create huge human and property loss, especially in high speed rail and subway systems. There is an imperative need to leverage realtime audio and video signals collected from the field to predict imminent accidents.
 							<br><br>
 							Dedicated wired signal transportation provides sufficient bandwidth and data protection, but the construction cost and logistics are huge obstacles, which makes wireless a much preferred solution. However wireless has limited bandwidth and prone to security attack.
@@ -521,8 +527,11 @@
 					</div>
 
 					<div class="bs-callout bs-callout-warning" >
-						<h4>Federated Remote IoT Access</h4>
-						<p>
+						<h4 data-toggle="collapse" href="#casestudy3" aria-expanded="false" aria-controls="casestudy3" class="collapsed">
+							Federated Remote IoT Access
+							<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i>
+						</h4>
+						<p class="collapse" id="casestudy3">
 							A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage servers hosted on the customer sites. Customer security concern requires support personnel visit that results in high cost and slow service. A federated remote access solution is desired to allow customers to participate in the decision process.
 							<br><br>
 							With the first rollout of a solution designed by us, it eliminates annual loss of 22,000 man hours, translating to $2M in savings. Long term benefit also includes saved additional license cost each year.
@@ -531,53 +540,9 @@
 				</div>
 			</section>
 
-		<!--
-			<section id="test" class="main-container">
-				<div class="container">
-					<h3>See More</h3>
-					<div class="row" >
-
-						<div class="col-sm-6 col-md-4 ">
-							<div class="see-more">
-								<img src="images/sn_iot_720.jpg" class="light">
-								<img src="images/sn_iot_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4 ">
-							<div class="see-more">
-								<img src="images/sn_car_720.jpg" class="light">
-								<img src="images/sn_car_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-						<div class="col-sm-6 col-md-4">
-							<div class="see-more">
-								<img src="images/sn_iot_720.jpg" class="light">
-								<img src="images/sn_iot_720-30b.jpg" class="dark">
-								<p>PUF Demo</p>
-								<small>See How PUF works</small>
-							</div>
-						</div>
-
-
-
-					</div>
-				</div>
-			</section>
-
--->
-
-
 			<!-- section start -->
 			<!-- ================ -->
-			<section id="whyus" class="main-container clearfix">
+			<section class="main-container clearfix">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -602,7 +567,7 @@
 			<!-- section start -->
 			<!-- ================ -->
 
-			<section class="main-container clearfix">
+			<section id="whyus"  class="main-container clearfix">
 				<div class="container">
 					<h3>Why <strong>Choose</strong> Us?</h3>
 					<div class="separator-2"></div>
@@ -613,12 +578,12 @@
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
 												<i class="fa fa-bold pr-10"></i>Flexibility &amp; Scalability
 											</a>
 										</h4>
 									</div>
-									<div id="collapseOne" class="panel-collapse collapse in">
+									<div id="collapseOne" class="panel-collapse collapse collapse">
 										<div class="panel-body">
 											Choose the components from our micro service based suite to fit your needs and achieve system capacity elasticity.
 											Micro-service architecture offers highly customizable packages and enables flexible integration with customers’
@@ -802,9 +767,13 @@
 
 
 	function initSectionFinder(){
+
+
 		$(".navbar-nav li a").click(function() {
 			var name = $(this).attr('data');
-			var pos = $("#" + name).offset().top - 50  ;
+			var pos = $("#" + name).offset().top - 10;
+
+			if ($(window).width()>767) pos -=  70;//for small screens, position section at the top(because there is no menu
 
 			$('html, body').animate({ scrollTop: pos }, 550);
 		});
@@ -835,7 +804,7 @@
 			i = i<3 ? i+1:0;
 			$('#support [data-slide-to='+i +']').addClass('highlight');
 
-		}, 3000);
+		}, 6000);
 	}
 
 
