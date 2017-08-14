@@ -425,7 +425,6 @@ tbody {
 }
 .header {
   border-top: 1px solid #ffffff;
-  border-bottom: 2px solid #f1f1f1;
   background-color: #fcfcfc;
 }
 .header.dark {
@@ -506,9 +505,7 @@ tbody {
   min-height: 400px;
   padding-top: 100px;
 }
-.main-container {
-  padding: 50px 0 0 0 ;
-}
+
 .block {
   margin-bottom: 50px;
 }
@@ -1067,9 +1064,6 @@ tbody {
   display: none;
 }
 
-#logo_img{
-    height: 75px;
-}
 
 .fixed-header-on .header.fixed-before .logo img {
   max-height: none;
@@ -7893,6 +7887,9 @@ a{
     height: 50px
 }
 
+#support a{
+    overflow: hidden;
+}
 
 
 #myCarousel  {
@@ -7905,7 +7902,9 @@ a{
     margin: 20px 10px 0 0;
 }
 
-
+#howCarousel .carousel-inner{
+    height: inherit;
+}
 
 
 
@@ -7932,26 +7931,62 @@ a{
 
 
 
+#support h4{
+    display:inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-@media (max-width: 992px) {
+#casestudy h4{
+    margin:0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+#casestudy p{
+    margin-bottom: 0;
+}
+
+#casestudy h4 .glyphicon-chevron-down, #casestudy h4.collapsed .glyphicon-chevron-right{
+    display:block;
+}
+
+#casestudy h4.collapsed .glyphicon-chevron-down, #casestudy h4 .glyphicon-chevron-right{
+    display:none;
+}
+
+
+
+@media (min-width: 993px) {
 
     #howCarousel{
         height: 100px
     }
-
-     #support .icn{
-        display: none;
-     }
 }
 
 
+@media (max-width: 992px) {
+
+    #howCarousel{
+        height: 110px
+    }
+
+    #support .col-sm-3 {
+        height: 265px;
+    }
+
+    #support .icn{
+        display: none;
+    }
+}
 
 
 
 @media (max-width: 767px) {
 
     #howCarousel{
-        height: 150px
+        height: 240px;
     }
 
 
