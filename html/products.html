@@ -1,0 +1,77 @@
+<style>
+
+h5{
+    text-transform: none;
+    display: inline-block;
+    width: 226px;
+    text-align: center;
+    font-weight: 200;
+}
+
+  
+
+.bg{
+    position: fixed;
+    top: 0; bottom: 0; left:0; right:0;
+    z-index:1;
+    background: #000000de;
+    opacity:0;
+    transition: opacity .1s;
+
+
+}
+
+
+
+.bg.show{
+    z-index: 100;
+    opacity:1;
+}
+
+.bg.show-remove{
+    z-index: 100;
+    xxopacity:.5;
+}
+
+</style>
+
+
+<div style="height:600px; padding:0 30px;"  ng-controller="ProductsCtrl"> 
+    <div class="bg"  ng-class="{show: showBg}" ></div> 
+    <h4>Products</h4>
+    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae viur?
+
+    <br><br>
+
+    <h5>&nbsp;&nbsp;CIP</h5>
+    <h5>Tundra</h5>
+    <h5>Typhoon</h5>
+    <br>
+
+
+    <img src="images/products/cip.png" class="phone"  ng-class="{active: show.cip}" ng-mouseover="hoverIn('cip')" ng-mouseout="hoverOut('cip')">
+    <div class="phone-info" style="left: 280px"ng-class="{active: show.cip}">
+        CIP<br><br>
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+    </div>
+
+    <img src="images/products/tundra.png" class="phone"  ng-class="{active: show.tundra}" ng-mouseover="hoverIn('tundra')" ng-mouseout="hoverOut('tundra')">
+    <div class="phone-info" style="left: 540px" ng-class="{active: show.tundra}">
+        TUNDRA<br><br>
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+    </div>
+
+    <img src="images/products/typhoon.png" class="phone"  ng-class="{active: show.typhoon}" ng-mouseover="hoverIn('typhoon')" ng-mouseout="hoverOut('typhoon')">
+    <div class="phone-info" style="left: 770px" ng-class="{active: show.typhoon}">
+        TYPHOON<br><br>
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+</script>
