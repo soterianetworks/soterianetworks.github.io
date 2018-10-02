@@ -10,31 +10,51 @@ h1{
     margin: 0;
     font-size: 40px;
     font-weight: 400;
+    border:0!important;
 }
 
 
+#home .info{
+
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+
+  background: linear-gradient(to right, #000000ab, #00000094 70%, #0000 100%);
+
+
+}
+
 </style>
 
-  <div class="row" style="background: transparent;">
-      <div class="col-xs-10 test" >
+  <div id="home" >
+
+
+      <div class="container" >
           <h2>WHAT IS </h2>
           <h1>SOTERIA NETWORKS?</h2>
-          <hr  style=" border-top: 1px solid #ffffff;">
-          <div style="width: 900px;"> 
-              <div class="phone">
-                  <div>
-                      <img src="images/products/cip.png"> <div class="circle-btn"></div>
-                  </div>
+          <hr>
+          <div class="row"> 
+
+         
+
+              <div class="col-xs-10"  >
+                  <video autoplay muted loop  controls="" id="bgvideo" >
+            
+                      <source src="https://d2gg9evh47fn9z.cloudfront.net/COLOURBOX24994693.mp4" type="video/mp4" itemprop="contentUrl">
+                  </video>
+                 <span style="vertical-align: top;"> Soteria Networks is technology firm specializing in IoT, Security, Cloud Computing and AI. We are building the next generation smart manufacturing solutions to create unique customer experience and maximize their return on investment.
+                  </span>
+                  <script>
+                      var vid = document.getElementById("bgvideo");
+                      vid.playbackRate = 0.5;
+                  </script>
               </div>
-
-
-              <div class="details"   style="width: 550px;display: inline-block; vertical-align: top; margin-left: 50px;">
-                  Soteria Networks is technology firm specializing in IoT, Security, Cloud Computing and AI. We are building the next generation smart manufacturing solutions to create unique customer experience and maximize their return on investment
-
-              </div>
+        
+              <div class="col-xs-2"  ></div>
           </div>
       </div>
-      <div class="col-xs-2 "></div>
+   <!-- -->
 
         
  

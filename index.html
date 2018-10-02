@@ -39,6 +39,20 @@
 
 
 <body class="front-page gradient-background-header">
+
+    <div id="video" style="display:none;">
+        <div class="my-test"></div>
+        <!--  
+        <video autoplay muted loop  controls="" id="bgvideo" >
+         
+            <source src="https://d2gg9evh47fn9z.cloudfront.net/COLOURBOX24994693.mp4" type="video/mp4" itemprop="contentUrl">
+        </video>
+-->
+
+    </div>
+
+
+
 <div class="loading">
 
 	<img style="display:block;margin:300px auto;" src="images/loading-icon.svg">
@@ -98,9 +112,11 @@
 
 
 
-		<div id="page-start" class="container">
+		<div id="page-start" >
 
-			<div ng-view></div>
+			<div xxclass="container">
+          <div ng-view ></div>
+      </div>
 
 		</div>
 
@@ -111,7 +127,7 @@
 	</div>
 </div>
 <footer id="footer">
-	<div class="text-center">Copyright © 2016 Soteria Networks, Inc. All Rights Reserved</div>
+	<div class="text-center">Copyright © 2018 Soteria Networks, Inc. All Rights Reserved</div>
 </footer>
 
 <script type="text/javascript" src="plugins/jquery.min.js"></script>
@@ -141,7 +157,7 @@
       setTimeout(function(){
 
         $('body').addClass('complete')
-      }, 2000)
+      }, 1000)
 	});
 
 var app = angular.module("app", ["ngRoute", "ngAnimate"]);
@@ -161,18 +177,13 @@ app.controller("ProductsCtrl", function($scope, $location, $timeout) {
     $scope.bgTimeout = null;
 
     $scope.hoverIn = function(p) {
-        $scope.show[p] = true;
-        $scope.showBg = true;
-      //  debugger;
+        $scope.show[p] = $scope.showBg = true;
         console.log('in')
-
     }
 
     $scope.hoverOut = function(p) {
-
-             $scope.show[p] = false;
-            $scope.showBg = false;
-            console.log('out')
+        $scope.show[p] = $scope.showBg = false;
+        console.log('out')
     }
 
 });
@@ -185,6 +196,9 @@ app.config(function($routeProvider) {
     .when("/casestudy", {  templateUrl : "html/casestudy.html" })
     .when("/whyus",     {  templateUrl : "html/whyus.html"  })
     .when("/company",   {  templateUrl : "html/company.html"   })
+    .when("/casestudy/caron",   {  templateUrl : "html/casestudy/caron.html"   })
+    .when("/casestudy/xdc",   {  templateUrl : "html/casestudy/xdc.html"   })
+    .when("/casestudy/3",   {  templateUrl : "html/casestudy/3.html"   })
     .otherwise({redirectTo:'/home'});
 
 

@@ -1,73 +1,109 @@
 <style>
 
-
-#myCarousel {
-  background:transparent;
+#casestudy {
+  max-width: 1100px;
+    margin: auto;
 }
 
-.light-gray-bg.shadow, .light-gray-bg.shadow-narrow {
-  background: transparent!important;
-}
-
-article{
-  border: 0px!important;
-  background: transparent;
-}
-
-#casestudy-item .case{
-    height: 500px;
-    justify-content: center;
-
-    display : flex;
-    align-items : center;
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
+#casestudy h4 {
+  color:#17326d!important
 }
 
 
-.cover{
-  position: absolute;
-    width: 100%;
-    background: #000000b3;
-    height: 500px;
-    transition: all .4s;
+#casestudy .case-item {
+    height:170px;
+    color:black;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
 }
 
-.cover:hover{
-  opacity:.3;
+#casestudy .case-item.left {
+    background: linear-gradient(to left, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
+    padding-right:20px;
 }
+
+#casestudy .case-item.right {
+    background: linear-gradient(to right, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
+    padding-left:20px;
+}
+
+#casestudy .case-item.left img{
+    object-fit: cover;
+    margin-right: 20px;
+    width: 325px;
+    height:170px;
+    float: left;
+}
+
+#casestudy .case-item.right img{
+  height:170px;
+  float:right;
+  margin-left: 20px;
+  width: 325px;
+
+}
+
+
+/** remove some of the borders and margins if screensize is small **/
+@media (max-width: 767px)  {
+
+    #casestudy img{
+        display: none;
+    }
+
+    #casestudy .case-item {
+        padding: 0 20px;
+    }
+}
+
+
 </style>
 
+<div> 
 
+    <h4>Case Study</h4>
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+    <br><br>
+    <div id="casestudy">
+        
+        <div class="case-item left" >
+            <img src="./images/casestudy/caron2.png">
 
-<h4>Case Study</h4>
-
-<div id="casestudy-item">
-    
-
-    <div class="row">
-        <div class="col-xs-3 ">
-            <div class="cover"></div>
-            <div class="case case1">Smart Manufacturing</div>  
+            <h4>Caron Engineering</h4>
+            <div>
+                ae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cons 
+                ae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cons 
+                ae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cons. 
+                <br><br>
+                <a  href="#!casestudy/caron">See More...</a> 
+              </div>
         </div>
-        <div class="col-xs-3 ">
-            <div class="cover"></div>
-            <div class="case case2" >Federated Remote IoT</div>             
-        </div>  
-        <div class="col-xs-3 ">
-            <div class="cover"></div>
-            <div class="case case3" >Case Study 3</div> 
+
+        <div  class="case-item right" >
+            <img src="./images/casestudy/xdc2.png"> 
+            <h4>XDC</h4>
+            <div>
+                Smart manufacturing is the core of Industry 4.0. IoT device connectivity to the cloud offers many possibilities to improve manufacturing process. In precision finishing, in-process and post-process quality control requires part variations to be converted to CNC control offsets. 
+                
+              
+                Manual configuration and adjustment are time consuming, error prone and don't scale. 
+                <br><br>
+                <a  href="#!casestudy/xdc">See More...</a> 
+            </div>
         </div>
-        <div class="col-xs-3">
-            <div class="cover"></div>
-            <div class="case case4">Case Study 4</div> 
+        <div   class="case-item left" >
+   
+            <img  src="./images/casestudy/oauth.png"> 
+            <h4>Federated Remote IoT Access</h4>  
+            <div>
+                A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage servers hosted on the customer sites. Customer security concern requires support personnel visit that results in high cost and slow service. A federated remote access solution is desired to allow customers to participate in the decision process. 
+                <br> <br>
+            
+                                    <a  href="#!casestudy/3">See More...</a> 
+                
+            </div>
+      <!--      <a>See More...</a>   -->
         </div>
     </div>
-    
-
-
-
-
 </div>
-

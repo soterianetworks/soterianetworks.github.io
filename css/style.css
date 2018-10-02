@@ -1,20 +1,19 @@
 
 
 html, body {
-  height:100%;
-  width: 100%;
+    height:100%;
+    width: 100%;
 }
 
 
 body {
-  height:90%;
-  background: black;
-  font-size: 17px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top right;
-  background-image: url('../images/main-bg.jpg');
-
+    height:90%;
+    background: black;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-image: url('../images/main-bg.jpg');
 }
 
 .loading{
@@ -28,20 +27,18 @@ body {
 }
 
 .loading div {
-  width: 200px;
-  margin: 400px auto;
-  text-align:center;
+    width: 200px;
+    margin: 400px auto;
+    text-align:center;
 }
 
 .complete .loading {
-  opacity:0;
-  z-index:-1;
+    opacity:0;
+    z-index:-1;
 }
 
 .main{
-
-  min-height: calc(100% - 95px);
-
+    min-height: calc(100% - 95px);
 }
 
 
@@ -104,15 +101,19 @@ header li a{
 }
 
 
-
+header ul {
+    padding-top: 20px;
+    white-space: nowrap;
+}
 
 header li{
   color:white;
   xxtext-decoration: none!important;
   list-style: none;
   display: inline;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px white;
+  font-size: 24px;
   padding: 10px;
 }
 
@@ -130,6 +131,7 @@ header li a.active{
   text-decoration: none;
   transform: scale(1.2);
   color: #30afd0!important;
+  text-shadow: 1px 1px 1px #30afd0;
 }
 
 
@@ -138,7 +140,7 @@ header li a.active{
 .super-bar {  
   color: #eaeaea!important;
   padding: 5px 10px;
-  border-bottom: 1px solid #767676;
+  xxborder-bottom: 1px solid #767676;
   display:none;
 
 }
@@ -172,26 +174,6 @@ footer {
 
 /*****  MENU    ****/
 
-
-.xxxxxxmenu {
-
-  width: 150px;
-  background: black;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  padding: 10px;
-  
-}
-
-
-
-.xxxxxmenu ul {
-
-  list-style: none!important;
-}
-
 #page-start ul{
 
   list-style: circle!important;
@@ -199,18 +181,14 @@ footer {
 
 
 
-.details{
 
-  width: 550px;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 50px;
-  background: linear-gradient(to right, #000000ab, #00000094 70%, #0000 100%);
-
-
+hr{
+  height: 1px!important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  background: linear-gradient(to right, #ffffff, #ffffff 15%, #0000 100%)!important;
 }
-
-
 
 
 .phone {
@@ -319,25 +297,16 @@ hr{
 /* ANIMATIONS
 ============================================================================= */
 
-/* leaving animations ----------------------------------------- */
-/* rotate and fall */
-@keyframes rotateFall {
-  0%      { transform: rotateZ(0deg); }
-  20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
-  40%     { transform: rotateZ(17deg); }
-  60%     { transform: rotateZ(16deg); }
-  100%    { transform: translateY(100%) rotateZ(17deg); }
-}
 
 /* slide in from the bottom */
-@keyframes slideOutLeft {
+@keyframes slideOut {
   to      { transform: translateY(-100%); }
 }
 
 
 
 /* slide in from the right */
-@keyframes slideInRight {
+@keyframes slideIn {
   from    { transform:translateY(-100%); }
   to      { transform: translateY(0); }
 }
@@ -346,32 +315,14 @@ hr{
 
 
 
-.ng-enter           { animation: slideInRight .3s both ease-in; z-index: 8888; top:0;position:absolute;}
+.ng-enter           { animation: slideIn .3s both ease-in; z-index: 8888; top:0;position:absolute;left:0;right:0;}
 
-.ng-leave           { animation: slideOutLeft .3s both ease-in; z-index: 9999; }
-
-
+.ng-leave           { animation: slideOut .3s both ease-in; z-index: 9999; }
 
 
 
 
-.case1{
-  background-image: url('../images/casestudy/case1.jpg');
-}
 
-
-.case2{
-  background-image: url('../images/casestudy/case2.jpg');
-}
-
-
-.case3{
-  background-image: url('../images/casestudy/case3.jpg');
-}
-
-.case4{
-  background-image: url('../images/casestudy/case4.jpg');
-}
 
 
 
@@ -395,4 +346,102 @@ hr{
     padding: 1px;
   }
   
+}
+
+
+
+
+
+
+
+.desktop {
+  background: white;
+  border-style: solid;
+  border-width: 20px 5px 40px 5px;
+  border-color: black;
+  position: relative;
+  z-index: 1;
+  height: 330px;
+  width: 155px;
+  margin: 0 45px;
+  display: inline-block;
+  border-radius: 13px;
+  box-shadow: 2px 2px 20px #bbb8b8;
+  transform: rotate(3deg)  scale(1);
+  transition: all .4s ease-out;
+}
+
+.desktop.active {
+  z-index: 10000;
+  transform: rotate(0deg)  scale(1.5);
+}
+
+
+
+
+.desktop .circle-btn {
+  height: 30px;
+  width: 30px;
+  margin: 6px auto;
+  background: black;
+  border: solid gray 2px;
+  border-radius: 50px;
+}
+
+
+
+
+
+.desktop-info{
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  max-height:0px;
+  xxxleft: 300px;
+  padding:  20px;
+  overflow: hidden;
+  font-size: 13px;
+  border-radius: 5px;
+  z-index: 10000;
+  opacity:0;
+  transition: all .3s;
+}
+
+
+
+.desktop-info.active  {
+  z-index: 10000;
+  max-height:300px;
+  opacity:1;
+}
+
+
+#video{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+}
+
+#bgvideo{
+  xxdisplay: inline-block;
+  vertical-align: baseline;
+  width: 400px;
+  background: white;
+  padding: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.my-test{
+  position: absolute;;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:black;
+  opacity:.8;
+  z-index: -1;
 }
