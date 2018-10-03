@@ -14,7 +14,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
-    background-image: url('../images/bw5.jpg');
+    background-image: url('../images/bw6.jpg');
+    xxoverflow: hidden;
+    overflow-x: hidden;
+    color:white;
 }
 
 .loading{
@@ -39,6 +42,7 @@ body {
 }
 
 .main{
+    padding:100px 40px 0 40px;
     min-height: calc(100% - 95px);
 }
 
@@ -58,7 +62,7 @@ h4{
     max-width: 1200px;
     margin: auto;
     overflow:hidden;
-    color:white;
+    xxcolor:white;
     transition: all 1s;
 }
 
@@ -80,14 +84,17 @@ h4{
 
 
 header {
-  position: relative;
+  position: absolute;
+  left:0;
+  right:0;
   top: -100px;
   transition: all 1s;
   background: transparent;
-  padding: 10px 0;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   z-index:200;
   background: black;
+  xxbackground: #0185bd;
 }
 
 header li a{
@@ -104,18 +111,16 @@ header li a{
 
 
 header ul {
-    padding-top: 20px;
+    padding-top: 30px;
     white-space: nowrap;
 }
 
 header li{
   color:white;
-  xxtext-decoration: none!important;
   list-style: none;
   display: inline;
   font-weight: 300;
-  xxtext-shadow: 1px 1px 1px white;
-  font-size: 24px;
+  font-size: 26px;
   padding: 10px;
 }
 
@@ -126,34 +131,55 @@ header li a{
 
 header li:hover a{
   text-decoration: none;
-  text-shadow: 1px 1px 1px #30afd0;
+  xxtext-shadow: 1px 1px 1px #30afd0;
 }
 
 
 header li a.active{ 
   text-decoration: none;
-  transform: scale(1.2);
+  xxtransform: scale(1.2);
   color: #30afd0!important;
-  xxtext-shadow: 1px 1px 1px #30afd0;
+  xxcolor: #720f98!important;
+  xxfont-weight: 600;
 }
 
 
 
 
-.super-bar {  
-  color: #eaeaea!important;
-  padding: 5px 10px;
-  xxborder-bottom: 1px solid #767676;
-  display:none;
 
+
+.social {
+      position: fixed;
+      right: -50px;
+      z-index: 100;
+      top: 130px;
+      transition: all 1s;
 }
 
-.super-bar a{
-  padding: 0 15px;
+.complete .social {
+    right:0;
+}
+
+.social a{
+    background: #4463a5;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 4px;
 }
 
 
+.social .linkedin {
+    background: linear-gradient(to bottom, #0185bd,  #0185bd 100%);
+}
 
+.social .twitter {
+    background: linear-gradient(to bottom, #4493cf,  #005ef0 100%);
+}
+
+.social .facebook {
+    background: linear-gradient(to bottom, #5876bd,  #194382 100%);
+}
 
 
 footer {
@@ -447,4 +473,27 @@ hr{
   background:black;
   opacity:.8;
   z-index: -1;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fafafa; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0185bd; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0185bd; 
 }

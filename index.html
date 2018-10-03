@@ -9,24 +9,25 @@
 	<meta name="description" content="Soteria Networks Official Web Site">
 	<meta name="author" content="soteria">
 
-	<!-- Mobile Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Favicon -->
+
 	<link rel="shortcut icon" href="images/favicon.ico">
 
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-	<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+  <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+  
+	<!-- 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-	<!-- Plugins
     <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
     <link href="plugins/hover/hover-min.css" rel="stylesheet">
     <link href="plugins/morphext/morphext.css" rel="stylesheet">
 -->
-	<!-- The Project core CSS file -->
+
 	<link href="css/main.css" rel="stylesheet" >
 	<link href="css/style.css" rel="stylesheet" >
 
@@ -59,21 +60,16 @@
 </div>
 <div class="main" ng-controller="HelloController">
 	<div>
+      <div class="social">
 
+					<a target="_blank" class="linkedin" href="https://www.linkedin.com/company/soteria-networks"><i class="fa fa-linkedin fa-2x"></i></a>
+					<a target="_blank" class="twitter" href="http://www.twitter.com/soterianetworks"><i class="fa fa-twitter fa-2x"></i></a>
+					<a target="_blank" class="facebook" href="http://www.facebook.com/soterianetworks"><i class="fa fa-facebook fa-2x"></i></a>
+
+				</div>
 
 		<header class="fixed clearfix">
 
-			<div class="super-bar">
-
-
-				<div style="float:right;">
-
-					<a target="_blank" href="https://www.linkedin.com/company/soteria-networks"><i class="fa fa-linkedin"></i></a>
-					<a target="_blank" href="http://www.twitter.com/soterianetworks"><i class="fa fa-twitter"></i></a>
-					<a target="_blank" href="http://www.facebook.com/soterianetworks"><i class="fa fa-facebook"></i></a>
-
-				</div>
-			</div>
 
 
 			<div class="container">
@@ -81,7 +77,7 @@
 				<div class="row">
 					<div class="col-xs-3 ">
 
-						<div class="header-left clearfix">
+						<div class="header-left clearfix" style="padding-top: 20px;">
 							<a href="#!home"><img id="logo_img" src="images/1_horizontal.274x79.png" alt="Soteria Networks"></a>
 						</div>
 
@@ -196,6 +192,7 @@ app.config(function($routeProvider) {
     .when("/casestudy", {  templateUrl : "html/casestudy.html" })
     .when("/whyus",     {  templateUrl : "html/whyus.html"  })
     .when("/company",   {  templateUrl : "html/company.html"   })
+    .when("/casestudy", {  templateUrl : "html/casestudy/index.html" })
     .when("/casestudy/caron",   {  templateUrl : "html/casestudy/caron.html"   })
     .when("/casestudy/xdc",   {  templateUrl : "html/casestudy/xdc.html"   })
     .when("/casestudy/3",   {  templateUrl : "html/casestudy/3.html"   })
