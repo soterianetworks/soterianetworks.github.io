@@ -10,10 +10,11 @@ body {
     height:90%;
     background: black;
     font-size: 16px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
-    background-image: url('../images/main-bg.jpg');
+    background-image: url('../images/bw5.jpg');
 }
 
 .loading{
@@ -83,9 +84,10 @@ header {
   top: -100px;
   transition: all 1s;
   background: transparent;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  padding: 10px 0;
+  margin-bottom: 20px;
   z-index:200;
+  background: black;
 }
 
 header li a{
@@ -112,7 +114,7 @@ header li{
   list-style: none;
   display: inline;
   font-weight: 300;
-  text-shadow: 1px 1px 1px white;
+  xxtext-shadow: 1px 1px 1px white;
   font-size: 24px;
   padding: 10px;
 }
@@ -124,6 +126,7 @@ header li a{
 
 header li:hover a{
   text-decoration: none;
+  text-shadow: 1px 1px 1px #30afd0;
 }
 
 
@@ -131,7 +134,7 @@ header li a.active{
   text-decoration: none;
   transform: scale(1.2);
   color: #30afd0!important;
-  text-shadow: 1px 1px 1px #30afd0;
+  xxtext-shadow: 1px 1px 1px #30afd0;
 }
 
 
