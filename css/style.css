@@ -7,17 +7,17 @@ html, body {
 
 
 body {
-    height:90%;
-    background: black;
+    xxheight:90%;
+    background: white;
+    color:black;
     font-size: 16px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
-    background-image: url('../images/bw6.jpg');
+    xxbackground-image: url('../images/bw6.jpg');
     xxoverflow: hidden;
     overflow-x: hidden;
-    color:white;
 }
 
 .loading{
@@ -42,8 +42,8 @@ body {
 }
 
 .main{
-    padding:100px 40px 0 40px;
-    min-height: calc(100% - 95px);
+    background: linear-gradient(to bottom right, white 0%,white 50%,#000000b5 100%);
+    min-height: calc(100% - 35px);
 }
 
 
@@ -66,12 +66,6 @@ h4{
     transition: all 1s;
 }
 
-#page-start>div>div {
-  xxborder-radius: 10px;
-  xxbackground: #00000059;
-
-}
-
 
 .complete #page-start{
     top:0;
@@ -80,11 +74,83 @@ h4{
 
 
 
+.title{
+  text-transform: none;
+  color: white!important;
+  position: absolute;
+  bottom: 20px;;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.sub-title{
+
+    color: white!important;
+    position: absolute;
+    bottom: 10px;
+    /* font-size: 40px; */
+}
+
+
 /**************************    HEADER   **************************/
 
 
-header {
+ .splash {
   position: absolute;
+  width:100%;
+  height: 250px;
+  top:0;
+  left:0;
+  right:0;
+}
+
+header .splash img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: inherit;
+
+  transition: all .5s;
+}
+
+.home-bg  img{
+    background-image: url('../images/home.jpg');
+    background-size: 100% 250px;
+}
+
+
+
+.products-bg{
+  background: #5c6164;
+}
+
+
+.products-bg img{
+  background-image: url('../images/products.jpg');
+  xxbackground-position: center; 
+  background-size: 100% 250px;
+}
+
+
+.solutions-bg img{
+  background-image: url('../images/solutions.jpg');
+  background-size: 100% 250px;
+}
+
+
+.aboutus-bg img{
+  background-image: url('../images/about-us.jpg');
+  background-size: 100% 250px;
+}
+
+
+
+
+
+
+
+header {
+  height: 250px;
+  position: relative;
   left:0;
   right:0;
   top: -100px;
@@ -93,7 +159,7 @@ header {
   padding-bottom: 10px;
   margin-bottom: 10px;
   z-index:200;
-  background: black;
+  background: white;
   xxbackground: #0185bd;
 }
 
@@ -111,17 +177,18 @@ header li a{
 
 
 header ul {
-    padding-top: 30px;
+    padding-top: 45px;
     white-space: nowrap;
+    margin-bottom:0px!important;
 }
 
 header li{
   color:white;
   list-style: none;
   display: inline;
-  font-weight: 300;
-  font-size: 26px;
-  padding: 10px;
+  font-weight: 400;
+  font-size: 23px;
+  padding: 10px 20px;
 }
 
 header li a{
@@ -148,49 +215,16 @@ header li a.active{
 
 
 
-.social {
-      position: fixed;
-      right: -50px;
-      z-index: 100;
-      top: 130px;
-      transition: all 1s;
-}
-
-.complete .social {
-    right:0;
-}
-
-.social a{
-    background: #4463a5;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 3px 4px;
-}
-
-
-.social .linkedin {
-    background: linear-gradient(to bottom, #0185bd,  #0185bd 100%);
-}
-
-.social .twitter {
-    background: linear-gradient(to bottom, #4493cf,  #005ef0 100%);
-}
-
-.social .facebook {
-    background: linear-gradient(to bottom, #5876bd,  #194382 100%);
-}
-
 
 footer {
+  text-align: center;
   background: black;
-  height: 60px;
+  height: 35px;
   padding: 5px;
   color: #eaeaea!important;
   position:relative;
   bottom:-60px;
   transition: all 1s;
-  display:none;
 }
 
 
@@ -259,12 +293,13 @@ hr{
 
 
 .phone-info{
+  background: white;
     position: absolute;
     top: 50px;
     width: 300px;
     max-height:0px;
     xxxleft: 300px;
-    padding:  20px;
+    padding:  20px 10px;
     overflow: hidden;
     font-size: 13px;
     border-radius: 5px;

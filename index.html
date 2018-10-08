@@ -17,23 +17,11 @@
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
-  
-	<!-- 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
-    <link href="plugins/hover/hover-min.css" rel="stylesheet">
-    <link href="plugins/morphext/morphext.css" rel="stylesheet">
--->
 
 	<link href="css/main.css" rel="stylesheet" >
 	<link href="css/style.css" rel="stylesheet" >
 
-	<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)
-<link href="css/skins/light_blue.css" rel="stylesheet">
--->
+
 
 </head>
 
@@ -41,47 +29,29 @@
 
 <body class="front-page gradient-background-header">
 
-    <div id="video" style="display:none;">
-        <div class="my-test"></div>
-        <!--  
-        <video autoplay muted loop  controls="" id="bgvideo" >
-         
-            <source src="https://d2gg9evh47fn9z.cloudfront.net/COLOURBOX24994693.mp4" type="video/mp4" itemprop="contentUrl">
-        </video>
--->
-
-    </div>
-
 
 
 <div class="loading">
 
 	<img style="display:block;margin:300px auto;" src="images/loading-icon.svg">
 </div>
-<div class="main" ng-controller="HelloController">
+<div class="main" ng-controller="HeaderCtrl">
 	<div>
-      <div class="social">
+		<header>
 
-					<a target="_blank" class="linkedin" href="https://www.linkedin.com/company/soteria-networks"><i class="fa fa-linkedin fa-2x"></i></a>
-					<a target="_blank" class="twitter" href="http://www.twitter.com/soterianetworks"><i class="fa fa-twitter fa-2x"></i></a>
-					<a target="_blank" class="facebook" href="http://www.facebook.com/soterianetworks"><i class="fa fa-facebook fa-2x"></i></a>
-
-				</div>
-
-		<header class="fixed clearfix">
-
-
-
+     
 			<div class="container">
-
+          <div class="splash"  ng-class="class">
+              <img>
+          </div>
+          
+          <h2 class="title">{{title}}</h2>
 				<div class="row">
 					<div class="col-xs-3 ">
 
 						<div class="header-left clearfix" style="padding-top: 20px;">
-							<a href="#!home"><img id="logo_img" src="images/horizontal.png" alt="Soteria Networks"></a>
+						  	<a href="#!home"><img id="logo_img" src="images/horizontal.png" alt="Soteria Networks"></a>
 						</div>
-
-
 					</div>
 					<div class="col-xs-9">
 
@@ -92,8 +62,7 @@
 										<li><a ng-class="getClass('/home')" href="#!home">Home</a></li>
 										<li><a ng-class="getClass('/products')" href="#!products">Products</a></li>
 										<li><a ng-class="getClass('/solutions')" href="#!solutions">Solutions</a></li>
-										<li><a ng-class="getClass('/casestudy')" href="#!casestudy">Case Study</a></li>
-										<li><a ng-class="getClass('/whyus')" href="#!whyus">Why Us</a></li>
+										<li><a ng-class="getClass('/whyus')" href="#!whyus">About Us</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -102,18 +71,13 @@
 					</div>
 				</div>
 			</div>
-			<!--  <i class="fa fa-bars fa-3x"></i>-->
 		</header>
 
 
 
 
 		<div id="page-start" >
-
-			<div xxclass="container">
-          <div ng-view ></div>
-      </div>
-
+        <div ng-view ></div>
 		</div>
 
 
@@ -122,9 +86,7 @@
 
 	</div>
 </div>
-<footer id="footer">
-	<div class="text-center">Copyright © 2018 Soteria Networks, Inc. All Rights Reserved</div>
-</footer>
+<footer id="footer">Copyright © 2018 Soteria Networks, Inc. All Rights Reserved</footer>
 
 <script type="text/javascript" src="plugins/jquery.min.js"></script>
 
@@ -137,6 +99,7 @@
 <script type="text/javascript" src="js/angular-1.7.4.js"></script>
 <script type="text/javascript" src="js/angular-route-1.7.4.js"></script>
 <script type="text/javascript" src="js/angular-animate-1.7.4.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -146,62 +109,3 @@
 
 
 
-
-<script>
-
-	$(function(){
-      setTimeout(function(){
-
-        $('body').addClass('complete')
-      }, 1000)
-	});
-
-var app = angular.module("app", ["ngRoute", "ngAnimate"]);
-app.controller("HelloController", function($scope, $location) {
-    $scope.getClass = function (path) {
-        return ($location.path().substr(0, path.length) === path) ? 'active' : '';
-    }
-
-
-});
-
-app.controller("ProductsCtrl", function($scope, $location, $timeout) {
-
-    $scope.showBg = false
-    $scope.show = {};
-
-    $scope.bgTimeout = null;
-
-    $scope.hoverIn = function(p) {
-        $scope.show[p] = $scope.showBg = true;
-        console.log('in')
-    }
-
-    $scope.hoverOut = function(p) {
-        $scope.show[p] = $scope.showBg = false;
-        console.log('out')
-    }
-
-});
-
-app.config(function($routeProvider) {
-    $routeProvider
-    .when("/home",      {  templateUrl : "html/home.html"  })
-    .when("/products",  {  templateUrl : "html/products.html"  })
-    .when("/solutions", {  templateUrl : "html/solutions.html"  })
-    .when("/casestudy", {  templateUrl : "html/casestudy.html" })
-    .when("/whyus",     {  templateUrl : "html/whyus.html"  })
-    .when("/company",   {  templateUrl : "html/company.html"   })
-    .when("/casestudy", {  templateUrl : "html/casestudy/index.html" })
-    .when("/casestudy/caron",   {  templateUrl : "html/casestudy/caron.html"   })
-    .when("/casestudy/xdc",   {  templateUrl : "html/casestudy/xdc.html"   })
-    .when("/casestudy/3",   {  templateUrl : "html/casestudy/3.html"   })
-    .otherwise({redirectTo:'/home'});
-
-
-
-
-});
-
-
-</script>

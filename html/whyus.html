@@ -2,36 +2,25 @@
 <style>
 
 
-#whyus .fa {
-    float: left;
-    padding-right: 75px;
+#whyus {
+  margin-top: 10px;
+}
+
+#whyus .icon1{
+    text-align: center;
+    display: block;
 
 }
 
 
 
-.section {
-    width: 500px;
-    color: #d4d4d4;
 
-    xxmargin-bottom:20px;
-}
-
-.section>div {
-    xbackground: linear-gradient(to right, #00000000 0%,#000000 1%,#000000 99%,#00000000 100%);
-    background: black;
-    padding: 25px 40px;
-    border-top: solid #00b0d3 7px;
-}
-
-h5 {
-  text-transform: none;
-}
 
 .network-icon{
-    float:left;
+
     position:relative;
-    width: 125px;
+    width: 85px;
+    display: inline-block;
     height: 75px;
     font-size: 2em;
 }
@@ -43,58 +32,65 @@ h5 {
 
 </style>
 
-<div id="whyus" class="container">
 
 
 
 
-  <h3>Why Us</h3>
+<div id="whyus" class="container" ng-controller="WhyUsCtrl">
 
 
 
   <div class="row">
-      <div class="col-xs-12">
-            <div class="section">
-                <h4 style="text-align: center">Flexibility &amp; Scalability</h4>
-                <div> 
-                    <div class="network-icon">
-                        <i class="fa fa-desktop"  style="top:0px;left:25px" ></i>
-                        <i class="fa fa-desktop"  style="top:35px;left:0px" ></i>
-                        <i class="fa fa-desktop"  style="top:35px;left:50px"></i>
-                    </div>
-
-                    Choose the components from our micro service based suite to fit your needs and achieve system capacity elasticity. 
-                    
-                    <br><br>Micro-service architecture offers highly customizable packages and enables flexible integration with customers’ existing systems. Micro services are easy to replace, organized around capabilities,and can be implemented using different programming languages, databases, hardware and software environment, depending on what fits best. Our platform supports continuous delivery of new features.
+      <div class="col-xs-4">
+            <div class="icon1">
+                <div class="network-icon">  
+                    <i class="fa fa-desktop"  style="top:0px;left:25px" ></i>
+                    <i class="fa fa-desktop"  style="top:35px;left:0px" ></i>
+                    <i class="fa fa-desktop"  style="top:35px;left:50px"></i>
                 </div>
             </div>
-      </div>
-      <div class="col-xs-12">  
-              <div class="section">
-                  <h4 style="text-align: center">Powerful Platform &amp; Operation Effiency</h4>
-                  <div> 
-                      <i class="fa fa-lock fa-5x"></i>
 
-                      Unified platform protecting enterprise applications, data and IoT devices and supporting identity relationship management (IRM) between users and devices. Real-Time geographic virtualization enables security analysis at finger tips. Great emphasis on DevOps using the industry leading practices.
-                    </div>
-              </div>
+
+
+                <h4 style="text-align: center">Flexibility &amp;<br> Scalability</h4>
+                <div> 
+                    Choose the components from our micro service based suite to fit your needs and achieve system capacity elasticity. 
+                 
+                    Micro-service architecture offers highly customizable packages and enables flexible integration with customers’ existing systems. Micro services are easy to replace, organized around capabilities,and can be implemented using different programming languages, databases, hardware and software environment, depending on what fits best. Our platform supports continuous delivery of new features.
+                </div>
+    
       </div>
+      <div class="col-xs-4">  
+
+          <i class="fa fa-line-chart fa-5x icon1" style="color: blue;"></i>
+        
+                  <h4 style="text-align: center">Powerful Platform &amp;<br> Operation Effiency</h4>
+                  <div> 
+                      Unified platform protecting enterprise applications, data and IoT devices and supporting identity relationship management (IRM) between users and devices. Real-Time geographic virtualization enables security analysis at finger tips. Great emphasis on DevOps using the industry leading practices.
+                  </div>
+       
+      </div>
+
+      <div class="col-xs-4">
+          <i class="fa fa-money fa-5x icon1" style="color: green;"></i>
+
+              <h4 style="text-align: center">Cost Effectiveness &amp;<br> Ease of Use</h4>
+              <div> 
+            
+                  High-quality product and support personnel with appropriate pricing. Responsive design and intuitive work flow reduce training budget
+              </div>
+ 
+
+
+      </div>
+
+
   </div>
 
 
+  <!--  
   <div class="row">
-      <div class="col-xs-12">
 
-          <div class="section">
-              <h4 style="text-align: center">Cost Effectiveness &amp; Ease of Use</h4>
-              <div> 
-                  <i class="fa fa-money fa-5x"></i>
-                  High-quality product and support personnel with appropriate pricing. Responsive design and intuitive work flow reduce training budget
-                </div>
-          </div>
-
-
-      </div>
       <div class="col-xs-12">  
           <div class="section">
               <h4 style="text-align: center">Support 24/7</h4>
@@ -107,7 +103,7 @@ h5 {
       </div>
   </div>
 
-    
+     -->
 
     
 

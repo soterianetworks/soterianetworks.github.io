@@ -25,6 +25,7 @@
 
 
 #casestudy .case-item {
+  border-top: solid black 1px;
     height:170px;
     color:black;
     font-size: 14px;
@@ -34,12 +35,12 @@
 }
 
 #casestudy .case-item.left {
-    background: linear-gradient(to left, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
+    xxbackground: linear-gradient(to left, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
     padding-right:20px;
 }
 
 #casestudy .case-item.right {
-    background: linear-gradient(to right, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
+    xbackground: linear-gradient(to right, #dcdcdc 0%,#ffffff 50%, #ffffff 100%);
     padding-left:20px;
 }
 
@@ -75,14 +76,12 @@
 
 </style>
 
-<div> 
-
-    <h3>Case Study</h3>
-    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-    <br><br>
+<div ng-controller="SolutionsCtrl"> 
+  <br>
     <div id="casestudy">
         
         <div class="case-item left" >
+            
             <img src="./images/casestudy/caron2.png">
 
             <h4>Caron Engineering</h4>
