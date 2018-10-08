@@ -29,8 +29,14 @@ app.controller("ProductsCtrl", function($scope, $location, $timeout) {
     $scope.showBg = false
     $scope.show = {};
 
-    $scope.hoverIn = function(p)  { $scope.show[p] = $scope.showBg = true; }
-    $scope.hoverOut = function(p) { $scope.show[p] = $scope.showBg = false;    }
+    $scope.hoverIn = function(p)  { 
+     // console.log('aaa')
+    //  $scope.show[p] = $scope.showBg = true; 
+    }
+    $scope.hoverOut = function(p) { 
+     // console.log('bbb')
+      //$scope.show[p] = $scope.showBg = false;  
+    }
 });
 
 

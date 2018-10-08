@@ -7,7 +7,7 @@ html, body {
 
 
 body {
-    xxheight:90%;
+
     background: white;
     color:black;
     font-size: 16px;
@@ -15,8 +15,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
-    xxbackground-image: url('../images/bw6.jpg');
-    xxoverflow: hidden;
     overflow-x: hidden;
 }
 
@@ -25,7 +23,6 @@ body {
     top: 0; bottom: 0; left:0; right:0;
     z-index: 10000;
     background: black;
-    xxbackground: linear-gradient(to bottom, #1e5799 0%,#000000 50%,#000000 51%,#ab0b0b 100%);
     opacity:1;
     transition: all .5s;
 }
@@ -254,69 +251,6 @@ hr{
 }
 
 
-.phone {
-    background: white;
-    border-style: solid;
-    border-width: 20px 5px 40px 5px;
-    border-color: black;
-    position: relative;
-    z-index: 1;
-    height: 330px;
-    width: 155px;
-    margin: 0 45px;
-    display: inline-block;
-    border-radius: 13px;
-    box-shadow: 2px 2px 20px #bbb8b8;
-    transform: rotate(3deg)  scale(1);
-    transition: all .4s ease-out;
-}
-
-.phone.active {
-    z-index: 10000;
-    transform: rotate(0deg)  scale(1.5);
-}
-
-
-
-
-.phone .circle-btn {
-    height: 30px;
-    width: 30px;
-    margin: 6px auto;
-    background: black;
-    border: solid gray 2px;
-    border-radius: 50px;
-}
-
-
-
-
-
-.phone-info{
-  background: white;
-    position: absolute;
-    top: 50px;
-    width: 300px;
-    max-height:0px;
-    xxxleft: 300px;
-    padding:  20px 10px;
-    overflow: hidden;
-    font-size: 13px;
-    border-radius: 5px;
-    z-index: 10000;
-    opacity:0;
-    transition: all .3s;
-}
-
-
-
-.phone-info.active  {
-    z-index: 10000;
-    max-height:300px;
-    opacity:1;
-}
-
-
 
 
 
@@ -379,9 +313,9 @@ hr{
 
 
 
-.ng-enter           { animation: slideIn .3s both ease-in; z-index: 8888; top:0;position:absolute;left:0;right:0;}
+.ng-enter           { animation: slideIn .2s both ease-in; z-index: 8888; top:0;position:absolute;left:0;right:0;}
 
-.ng-leave           { animation: slideOut .3s both ease-in; z-index: 9999; }
+.ng-leave           { animation: slideOut .2s both ease-in; z-index: 9999; }
 
 
 
@@ -415,69 +349,6 @@ hr{
 
 
 
-
-
-
-.desktop {
-  background: white;
-  border-style: solid;
-  border-width: 20px 5px 40px 5px;
-  border-color: black;
-  position: relative;
-  z-index: 1;
-  height: 330px;
-  width: 155px;
-  margin: 0 45px;
-  display: inline-block;
-  border-radius: 13px;
-  box-shadow: 2px 2px 20px #bbb8b8;
-  transform: rotate(3deg)  scale(1);
-  transition: all .4s ease-out;
-}
-
-.desktop.active {
-  z-index: 10000;
-  transform: rotate(0deg)  scale(1.5);
-}
-
-
-
-
-.desktop .circle-btn {
-  height: 30px;
-  width: 30px;
-  margin: 6px auto;
-  background: black;
-  border: solid gray 2px;
-  border-radius: 50px;
-}
-
-
-
-
-
-.desktop-info{
-  position: absolute;
-  top: 50px;
-  width: 300px;
-  max-height:0px;
-  xxxleft: 300px;
-  padding:  20px;
-  overflow: hidden;
-  font-size: 13px;
-  border-radius: 5px;
-  z-index: 10000;
-  opacity:0;
-  transition: all .3s;
-}
-
-
-
-.desktop-info.active  {
-  z-index: 10000;
-  max-height:300px;
-  opacity:1;
-}
 
 
 #video{

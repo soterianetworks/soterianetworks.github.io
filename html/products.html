@@ -11,10 +11,10 @@ h5{
   
 
 .bg{
-  xxdisplay:none;
+  display:none;
     position: fixed;
     top: 0; bottom: 0; left:0; right:0;
-    z-index:1;
+    z-index:0;
     background: #000000de;
     opacity:0;
     transition: opacity .1s;
@@ -34,6 +34,85 @@ h5{
     xxopacity:.5;
 }
 
+
+
+
+
+
+.phone {
+    background: white;
+    border-style: solid;
+    border-width: 20px 5px 40px 5px;
+    border-color: black;
+    position: relative;
+    z-index: 1;
+    height: 230px;
+    width: 322px;
+    margin: 0 15px;
+    display: inline-block;
+    border-radius: 13px;
+    box-shadow: 2px 2px 20px #bbb8b8;
+
+    xtransition: all .4s ease-out;
+}
+
+.phone.active {
+    z-index: 10000;
+    transform: rotate(0deg)  scale(1.9);
+}
+
+
+
+
+
+.phone-info{
+    background: white;
+    xxxposition: absolute;
+    xxxxtop: 50px;
+    width: 300px;
+    height:100px;
+    padding:  20px 10px;
+    overflow: hidden;
+    font-size: 13px;
+    border-radius: 5px;
+    xxxxz-index: 10000;
+    opacity:0;
+
+    
+}
+
+
+
+.active .phone-info  {
+    z-index: 10000;
+    xxmax-height:300px;
+    opacity:1;
+}
+
+.cip-item {
+  text-align: center; 
+  display: inline-block;
+  transform: scale(1);
+  xtransition: all .3s;
+}
+
+
+.cip-item.active{
+
+    text-align: center;
+    display: inline-block;
+    z-index: 10000;
+    position: absolute;
+    top:200px;
+    left: 0;
+    right: 0;
+    transform: scale(2);
+
+}
+
+
+
+
 </style>
 
 
@@ -44,18 +123,29 @@ h5{
 
     <br><br>
 
-    <h5>&nbsp;&nbsp;CIP</h5>
-    <h5>Tundra</h5>
-    <h5>Typhoon</h5>
     <br>
-
-
-    <img src="images/products/cip.png" class="phone"  ng-class="{active: show.cip}" ng-mouseover="hoverIn('cip')" ng-mouseout="hoverOut('cip')">
-    <div class="phone-info" style="left: 280px"ng-class="{active: show.cip}">
-        CIP<br><br>
-        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+    
+    <div  class="cip-item" ng-class="{active: show.cip}" ng-mouseover="hoverIn('cip')" ng-mouseout="hoverOut('cip')">
+        <div>CIP</div>
+        <img src="images/products/cip.png" class="phone"  >
+        <div class="phone-info" >
+            CIP <br><br>
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+        </div>
     </div>
 
+    <div class="cip-item" ng-class="{active: show.tundra}" ng-mouseover="hoverIn('tundra')" ng-mouseout="hoverOut('tundra')">
+        <div>MES</div>
+        <img src="images/products/tundra.png" class="phone" >
+        <div class="phone-info" >
+          MES <br><br>
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+        </div>
+    </div>
+
+
+
+<!--  
     <img src="images/products/tundra.png" class="phone"  ng-class="{active: show.tundra}" ng-mouseover="hoverIn('tundra')" ng-mouseout="hoverOut('tundra')">
     <div class="phone-info" style="left: 540px" ng-class="{active: show.tundra}">
         TUNDRA<br><br>
@@ -67,6 +157,7 @@ h5{
         TYPHOON<br><br>
         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
     </div>
+    -->
 </div>
 
 
