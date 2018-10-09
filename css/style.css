@@ -12,6 +12,7 @@ body {
     color:black;
     font-size: 16px;
     background-size: cover;
+    background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
@@ -41,7 +42,7 @@ body {
 }
 
 .main{
-    background: linear-gradient(to bottom right, white 0%,white 50%,#000000b5 100%);
+    xxbackground: linear-gradient(to bottom right, white 0%,white 50%,#000000b5 100%);
     min-height: calc(100% - 35px);
 }
 
