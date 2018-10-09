@@ -122,7 +122,7 @@ header .splash img {
 
 
 .products-bg img{
-  background-image: url('../images/products.jpg');
+  background-image: url('../images/home.jpg');
   xxbackground-position: center; 
   background-size: 100% 250px;
 }
@@ -135,7 +135,7 @@ header .splash img {
 
 
 .aboutus-bg img{
-  background-image: url('../images/about-us.jpg');
+  background-image: url('../images/home.jpg');
   background-size: 100% 250px;
 }
 
