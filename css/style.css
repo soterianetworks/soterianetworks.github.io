@@ -18,6 +18,8 @@ body {
     overflow-x: hidden;
 }
 
+/********  LOADING   *************/
+
 .loading{
     position: fixed;
     top: 0; bottom: 0; left:0; right:0;
@@ -50,6 +52,9 @@ h4{
   margin: 0;
   padding: 20px 0 10px 0;
 } 
+
+
+
 
 
 
@@ -91,8 +96,13 @@ h4{
 
 /**************************    HEADER   **************************/
 
+header #logo_img {
+    width: 200px;
+}
 
- .splash {
+
+header .splash {
+
   position: absolute;
   width:100%;
   height: 250px;
@@ -102,11 +112,17 @@ h4{
 }
 
 header .splash img {
+  background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
   height: inherit;
 
   transition: all .5s;
+}
+
+
+.home-bg img {
+    background: #252628;
 }
 
 .home-bg  img{
@@ -116,17 +132,11 @@ header .splash img {
 
 
 
-.products-bg{
-  background: #5c6164;
-}
 
-
-.products-bg img{
-  background-image: url('../images/home.jpg');
-  xxbackground-position: center; 
+.products-bg img {
+  background-image: url('../images/products.jpg');
   background-size: 100% 250px;
 }
-
 
 .solutions-bg img{
   background-image: url('../images/solutions.jpg');
@@ -134,15 +144,10 @@ header .splash img {
 }
 
 
-.aboutus-bg img{
-  background-image: url('../images/home.jpg');
+.aboutus-bg img {
+  background-image: url('../images/aboutus.jpg');
   background-size: 100% 250px;
 }
-
-
-
-
-
 
 
 header {
@@ -160,11 +165,7 @@ header {
   xxbackground: #0185bd;
 }
 
-header li a{
-  xxcolor: #eaeaea!important;
-  xxtransform: scale(1);
-  xxtransition: all .5s;
-}
+
 
 
 .complete header {
@@ -208,7 +209,10 @@ header li a.active{
 }
 
 
-
+.header-left {
+  
+  padding-top: 20px;
+}
 
 
 
@@ -339,12 +343,31 @@ hr{
   
   header ul li{
 
-    font-weight: 300;
-    font-size: 14px;
-    padding: 1px;
+    font-weight: 200;
+    font-size: 22px;
+    padding: 4px;
   }
   
 }
+
+
+@media (max-width: 570px)  {
+
+  .header-left {
+  
+    padding-top: 5px;
+  }
+
+
+  footer{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
 
 
 

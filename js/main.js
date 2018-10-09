@@ -46,9 +46,9 @@ app.controller("SolutionsCtrl", function($scope, $location) {
      $scope.$parent.$parent.class ="solutions-bg"
 });
 
-app.controller("WhyUsCtrl", function($scope, $location) {
+app.controller("AboutUsCtrl", function($scope, $location) {
      $scope.$parent.$parent.title ="About Us"
-     $scope.$parent.$parent.subtitle ="What is soteria Networks"
+     $scope.$parent.$parent.subtitle ="What is Soteria Networks"
      
      $scope.$parent.$parent.class ="aboutus-bg"
 });
@@ -62,14 +62,13 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/home",      {  templateUrl : "html/home.html"  })
     .when("/products",  {  templateUrl : "html/products.html"  })
-    .when("/casestudy", {  templateUrl : "html/casestudy.html" })
-    .when("/whyus",     {  templateUrl : "html/whyus.html"  })
+    .when("/products/cip",  {  templateUrl : "html/products/cip.html"  })
+    .when("/products/mes",  {  templateUrl : "html/products/mes.html"  })
+    .when("/aboutus",     {  templateUrl : "html/aboutus.html"  })
     .when("/company",   {  templateUrl : "html/company.html"   })
 
-    .when("/solutions", {  templateUrl : "html/solutions/index.html" })
-    .when("/solutions/caron",   {  templateUrl : "html/solutions/caron.html"   })
-    .when("/solutions/xdc",   {  templateUrl : "html/solutions/xdc.html"   })
-    .when("/solutions/3",   {  templateUrl : "html/solutions/3.html"   })
+    .when("/solutions", {  templateUrl : "html/solutions.html" })
+
     .otherwise({redirectTo:'/home'});
 
 
