@@ -3,6 +3,7 @@
 
 <style>
 
+    #products h4 {padding-top:0;}
 
     #products .fa {
         float: left;
@@ -19,16 +20,25 @@
         color: white;
         padding: 25px 40px 35px 40px;
         border-top: solid #008580 7px;
-        text-align: justify;
-        height: 400px;
+        position: relative;
+        xxmin-height: 275px;
+    }
+
+    #products a {
+        position: absolute;
+        bottom:10px;
+        right:10px;
     }
     
-    h5 {
-      text-transform: none;
+
+    @media (max-width: 767px)  {
+        #products .section>div {
+          min-height: auto;
+        }
     }
-    
-   
-    
+
+
+
     </style>
     
     <div id="products" class="container"  ng-controller="ProductsCtrl">
@@ -42,10 +52,12 @@
                         <i class="fa fa-lock fa-3x"></i>
                         CIP is an ideal platform for application development hosted on premise or in the private cloud. It includes complete
                         multi-tenant information asset life cycle management, including business entity, organization, user, application,
-                        device and API. The platform supports enterprise level single sign on (SAML & OAuth2), role based access control management,
-                        attribute based access control management, and access control enforcement at API gateway level.
+                        device and API. 
+                        <!--  
+                        The platform supports enterprise level single sign on (SAML & OAuth2), role based access control management, attribute based access control management, and access control enforcement at API gateway level.
+                       -->
                         <br>
-                        <a class="pull-right" href="#!products/cip"> See More...</a>
+                        <a href="#!products/cip"> See More...</a>
                     </div>
                 </div>
           </div>
@@ -58,7 +70,7 @@
                           This SaaS application supports factory level data filtering, product, machine, cutter and mold management,
                           NC file versioning, job assignment, quality tracking and real-time reporting.
                           <br>
-                          <a class="pull-right" href="#!products/mes"> See More...</a>
+                          <a href="#!products/mes"> See More...</a>
                       </div>
                   </div>
           </div>
@@ -73,7 +85,7 @@
                       the image processing software. The software extracts the dimensions of interest, compares them with the product
                       design file and decide if the parts are comforming to the designs.
                       <br>
-                      <a class="pull-right" href="#!products/ips"> See More...</a>
+                      <a href="#!products/ips"> See More...</a>
                     </div>
               </div>
     

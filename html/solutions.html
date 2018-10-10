@@ -1,40 +1,31 @@
-<style>
+    <style>
+
+      #solutions h4 {
+          padding-top:10px;
+          font-weight: 400;
+      }
+  
+      #solutions .item {
+          margin-bottom: 50px;
+          border-top: solid #000000bd 1px;
+          position: relative;
+      }
 
 
+      #solutions a{
+          position: absolute;
+          bottom: -30px;
+          left:0;
+      }
 
-    #products h4 {
-      padding-top:10px;
-      font-weight: 400;
-    }
- 
-    #products .item {
-        margin-bottom: 50px;
-        border-top: solid #000000bd 1px;
-    
-    }
-        
-    
-    #products .item>div{
-        xxfont-weight: 600;
-        xxxfont-size: 20px;
-    }
-    
-
-    #products .item {
-      position: relative;
-    }
-
-
-    #products a{
-      position: absolute;
-      bottom: -20px;
-      left:0;
-    }
+      #solutions a[aria-expanded=false] .less { display: none; }
+      #solutions a[aria-expanded=true]  .more { display: none; }
 
     </style>
     
+
     
-    <div id="products" style="height:450px; padding:0 30px;" ng-controller="SolutionsCtrl"> 
+    <div id="solutions" style="padding:0 30px;" ng-controller="SolutionsCtrl"> 
     
 
       
@@ -54,8 +45,11 @@
 
 
                 </div>
-                <a  data-toggle="collapse" data-target="#amc-more" aria-expanded="false">See More...</a> 
+                <a  data-toggle="collapse" data-target="#amc-more" aria-expanded="false">
+                  <span class="more">See More...</span> <span class="less">See Less...</span>
+                </a> 
         </div>
+
 
     
         <div class="item">
@@ -68,7 +62,9 @@
                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 
                 </div>
-                <a  data-toggle="collapse" data-target="#xdc-more" aria-expanded="false">See More...</a> 
+                <a  data-toggle="collapse" data-target="#xdc-more" aria-expanded="false">
+                    <span class="more">See More...</span> <span class="less">See Less...</span>
+                </a> 
         </div>
     
     
@@ -81,11 +77,11 @@
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 
             </div>
-            <a  data-toggle="collapse" data-target="#iot-more" aria-expanded="false">See More...</a> 
+            <a  data-toggle="collapse" data-target="#iot-more" aria-expanded="false">
+                <span class="more">See More...</span> <span class="less">See Less...</span>
+            </a> 
         
-          </div>
-    
-  
+        </div>
     </div>
     
     

@@ -32,58 +32,41 @@
 
 
 <div class="loading">
-
-	<img style="display:block;margin:300px auto;" src="images/loading-icon.svg">
+	  <img style="display:block;margin:300px auto;" src="images/loading-icon.svg">
 </div>
+
 <div class="main" ng-controller="HeaderCtrl">
 	<div>
-		<header>
-
-     
-			<div class="container">
-          <div class="splash"  ng-class="class">
-              <img>
+      <header>
+          <div class="container">
+              <div class="splash"  ng-class="class"> <img> </div>
+              
+              <h2 class="title">{{title}}</h2>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-3 ">
+                      <div class="header-left clearfix">
+                          <a href="#!home"><img id="logo_img" src="images/horizontal.png" alt="Soteria Networks"></a>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-9">
+                      <div class="header-right clearfix">
+                          <nav>
+                              <ul id="navigation">
+                                  <li><a ng-class="getClass('/home')" href="#!home">Home</a></li>
+                                  <li><a ng-class="getClass('/products')" href="#!products">Products</a></li>
+                                  <li><a ng-class="getClass('/solutions')" href="#!solutions">Solutions</a></li>
+                                  <li><a ng-class="getClass('/aboutus')" href="#!aboutus">About Us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
           </div>
-          
-          <h2 class="title">{{title}}</h2>
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 ">
+      </header>
 
-						<div class="header-left clearfix">
-						  	<a href="#!home"><img id="logo_img" src="images/horizontal.png" alt="Soteria Networks"></a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9">
-
-						<div class="header-right clearfix">
-							<div>
-								<nav>
-									<ul id="navigation">
-										<li><a ng-class="getClass('/home')" href="#!home">Home</a></li>
-										<li><a ng-class="getClass('/products')" href="#!products">Products</a></li>
-										<li><a ng-class="getClass('/solutions')" href="#!solutions">Solutions</a></li>
-										<li><a ng-class="getClass('/aboutus')" href="#!aboutus">About Us</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-
-
-		<div id="page-start" >
-        <div ng-view ></div>
-		</div>
-
-
-
-
-
+      <div id="page-start" >
+          <div ng-view ></div>
+      </div>
 	</div>
 </div>
 <footer id="footer">Copyright © 2018 Soteria Networks, Inc. All Rights Reserved</footer>

@@ -42,7 +42,6 @@ body {
 }
 
 .main{
-    xxbackground: linear-gradient(to bottom right, white 0%,white 50%,#000000b5 100%);
     min-height: calc(100% - 35px);
 }
 
@@ -65,10 +64,8 @@ h4{
     max-width: 1200px;
     margin: auto;
     overflow:hidden;
-    xxcolor:white;
     transition: all 1s;
 }
-
 
 .complete #page-start{
     top:0;
@@ -86,75 +83,20 @@ h4{
   text-shadow: 2px 2px 4px black;
 }
 
-.sub-title{
-
-    color: white!important;
-    position: absolute;
-    bottom: 10px;
-    /* font-size: 40px; */
-}
-
 
 /**************************    HEADER   **************************/
 
-header #logo_img {
-    width: 200px;
-}
 
 
-header .splash {
+header .home-bg  img{  background-image: url('../images/home.jpg');}
 
-  position: absolute;
-  width:100%;
-  height: 250px;
-  top:0;
-  left:0;
-  right:0;
-}
+header .products-bg img { background-image: url('../images/products.jpg');}
 
-header .splash img {
-  background-position: top center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: inherit;
+header .products-cip-bg img { background-image: url('../images/products/cip.jpg');}
 
-  transition: all .5s;
-}
+header .solutions-bg img{ background-image: url('../images/solutions.jpg');}
 
-
-.home-bg img {
-    background: #252628;
-}
-
-.home-bg  img{
-    background-image: url('../images/home.jpg');
-    background-size: 100% 250px;
-}
-
-
-
-
-.products-bg img {
-  background-image: url('../images/products.jpg');
-  background-size: 100% 250px;
-}
-
-
-.products-cip-bg img {
-  background-image: url('../images/products/cip.jpg');
-  background-size: 100% 250px;
-}
-
-.solutions-bg img{
-  background-image: url('../images/solutions.jpg');
-  background-size: 100% 250px;
-}
-
-
-.aboutus-bg img {
-  background-image: url('../images/aboutus.jpg');
-  background-size: 100% 250px;
-}
+header .aboutus-bg img {  background-image: url('../images/aboutus.jpg');}
 
 
 header {
@@ -171,20 +113,42 @@ header {
   background: white;
 }
 
-
-
-
 .complete header {
-
   top: 0px;
 }
 
 
 header ul {
-    padding-top: 45px;
+    margin-top: 45px;
     white-space: nowrap;
+    xxbackground: #00000078;
+    xxbackground: linear-gradient(to right, #00000000 0%,#00000017 50%, #0000 100%);
     margin-bottom:0px!important;
 }
+
+header #logo_img {
+    width: 200px;
+}
+
+
+header .splash {
+    position: absolute;
+    width:100%;
+    height: 250px;
+    top:0;
+    left:0;
+    right:0;
+}
+
+header .splash img {
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    background-size: 100% 250px;
+    transition: all .5s;
+}
+
 
 header li{
   color:white;
@@ -202,22 +166,26 @@ header li a{
 
 header li:hover a{
   text-decoration: none;
+  color: #01c5be!important;
 }
 
 
 header li a.active{ 
   text-decoration: none;
-  color: #008580!important;
+  color: #01c5be!important;
   text-shadow: 0px 0px 3px black;
 }
 
 
-.header-left {
-  
+header .header-left {
   padding-top: 20px;
 }
 
 
+
+
+
+/***********  FOOTER  *****************/
 
 
 footer {
@@ -241,83 +209,34 @@ footer {
 
 /*****  MENU    ****/
 
-#page-start ul{
-
-  list-style: circle!important;
-}
-
 
 
 
 hr{
-  height: 1px!important;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  background: linear-gradient(to right, #ffffff, #ffffff 15%, #0000 100%)!important;
+    height: 1px!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    background: linear-gradient(to right, #ffffff, #ffffff 15%, #0000 100%)!important;
+    color:white;
+    border-top: 1px solid #313131;
 }
 
 
-
-
-
-
-
-
-.test {
-  margin-top:30px;
-  margin-left:60px;
-  height: 500px;
-  border-radius: 10px;
-  padding-bottom:20px;
-  color: white;
-  xxbackground: #00000012;
-}
-
-
-
-.test h2{
-  color:white;
-  text-transform: none;
-  white-space: nowrap;
-  font-weight: 100;
-}
-
-hr{
-  color:white;
-  border-top: 1px solid #313131;
-}
-
-
-
-
-
-.panel1{
-    padding:10px;
-    xxcolor:black;
-    xxbackground: white;
-    list-style: none;
-}
 
 /* ANIMATIONS
 ============================================================================= */
 
-
-/* slide in from the bottom */
 @keyframes slideOut {
   to      { transform: translateY(-100%); }
 }
 
 
 
-/* slide in from the right */
 @keyframes slideIn {
   from    { transform:translateY(-100%); }
   to      { transform: translateY(0); }
 }
-
-
-
 
 
 .ng-enter           { animation: slideIn .2s both ease-in; z-index: 8888; top:0;position:absolute;left:0;right:0;}
@@ -325,46 +244,35 @@ hr{
 .ng-leave           { animation: slideOut .2s both ease-in; z-index: 9999; }
 
 
-
-
-
-
-
-
-
 /** remove some of the borders and margins if screensize is small **/
 @media (max-width: 767px)  {
 
-  header .col-xs-9 {
-      padding:0;
-  }
+    header .col-xs-9 {
+        padding:0;
+    }
 
-  header ul {
-    padding:0;
-    white-space: nowrap;
-  }
-  
-  header ul li{
-
-    font-weight: 200;
-    font-size: 22px;
-    padding: 4px;
-  }
-  
+    header ul {
+        padding:0;
+        white-space: nowrap;
+    }
+    
+    header ul li{
+      font-weight: 200;
+      font-size: 22px;
+      padding: 4px;
+    }
 }
 
 
 @media (max-width: 570px)  {
 
-  .header-left {
-  
-    padding-top: 5px;
-  }
+    .header-left {
+        padding-top: 5px;
+    }
 
-
-  footer{
-    font-size: 13px;
-  }
+    footer{
+        font-size: 13px;
+    }
 }
 
 
@@ -372,40 +280,6 @@ hr{
 
 
 
-
-
-
-
-
-#video{
-  position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-
-}
-
-#bgvideo{
-  xxdisplay: inline-block;
-  vertical-align: baseline;
-  width: 400px;
-  background: white;
-  padding: 5px;
-  float: left;
-  margin-right: 10px;
-}
-
-.my-test{
-  position: absolute;;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:black;
-  opacity:.8;
-  z-index: -1;
-}
 
 
 
@@ -417,7 +291,7 @@ hr{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #008580; 
+  background: #fafafa;
 }
 
 /* Handle */

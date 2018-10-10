@@ -64,6 +64,7 @@ h5,
 h6,
 .navbar .navbar-nav {
   color:black!important;
+  text-transform: none;
   xxfont-family: 'Raleway', sans-serif;
 }
 body {
