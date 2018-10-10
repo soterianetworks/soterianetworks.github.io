@@ -4,17 +4,33 @@
 <style>
 
 
+  #cip li{
+      list-style-type: square;
+  }
     
+
+  #cip #cip-img1 {
+      width: 100%;
+      min-width: 300px;
+      max-width: 400px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+  }
+
+  #cip li {
+      padding-bottom: 20px;
+  }
+
 </style>
     
-    <div class="container"  ng-controller="Products-CIP-Ctrl" >
+    <div class="container" id="cip" ng-controller="Products-CIP-Ctrl" >
 
       <div class="row">
           <div class="col-xs-12">
                 <div class="section">
                     <h4>Cloud Integration Platform (CIP)</h4>
-                    <div class="col-xs-4"><img class="pull-left" src="images/products/cip_shot.png"></div>
-                    <div class="col-xs-8">
+      
+                        <img id="cip-img1" class="pull-left" src="images/products/cip_shot.jpg">
                         <li>The API Gateway provides a great infrastructure component that simplifies service oriented architect implementation.
                             APIs are registered with the API gateway. Requests for the services are routed through the API gateway.
                             The API gateway implements the authorization enforcement based on the privileges of the principal in the request.
@@ -36,7 +52,7 @@
                         <li>The standard user and device lifecycle management is fully supported. In addition, multi-tenancy provides data segregation
                             and low maintenance for shared environment.
                         </li>
-                    </div>
+           
                 </div>
           </div>
       </div>
