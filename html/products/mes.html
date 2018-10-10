@@ -3,19 +3,26 @@
 
 <style>
 
+  #mes #mes-img1 {
+      width: 100%;
+      min-width: 300px;
+      max-width: 400px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+  }
 
     
   </style>
   
-  <div class="container"  ng-controller="Products-MES-Ctrl" >
+  <div id="mes" class="container"  ng-controller="Products-MES-Ctrl" >
   
   
     <div class="row">
         <div class="col-xs-12">
               <div class="section">
                   <h4>MES for Precision Finishing</h4>
-                  <div class="col-xs-4"><img class="pull-left" src="images/products/mes.png"></div>
-                  <div class="col-xs-8">
+                  <img id="mes-img1" class="pull-left" src="images/products/mes.png">
+                 
 
                       This SaaS application supports factory level data filtering, product, machine, cutter and mold management,
                       NC file versioning, job assignment, quality tracking and real-time reporting.
