@@ -5,34 +5,41 @@
 
 
     
-    </style>
+</style>
     
     <div class="container"  ng-controller="Products-CIP-Ctrl" >
-    
-    
+
       <div class="row">
           <div class="col-xs-12">
                 <div class="section">
                     <h4>Cloud Integration Platform (CIP)</h4>
-                    <img class="pull-right" src="images/products/oauth.png">
-                    <div> 
-                 
-                        CIP is an ideal platform for application development hosted on premise or in the private cloud. It includes complete
-                        multi-tenant information asset life cycle management, including business entity, organization, user, application,
-                        device and API. The platform supports enterprise level single sign on (SAML & OAuth2), role based access control management,
-                        attribute based access control management, and access control enforcement at API gateway level. Based on this platform,
-                        we have been able to developing high quality business application, such as MES and WMS, at a fast turnaround.
-                                </div>
+                    <div class="col-xs-4"><img class="pull-left" src="images/products/cip_shot.png"></div>
+                    <div class="col-xs-8">
+                        <li>The API Gateway provides a great infrastructure component that simplifies service oriented architect implementation.
+                            APIs are registered with the API gateway. Requests for the services are routed through the API gateway.
+                            The API gateway implements the authorization enforcement based on the privileges of the principal in the request.
+                        </li>
+                        <li>OAuth2 provides authorization flows for web applications, desktop applications, mobile phones, and living room devices.
+                            It offers similar single sign on capability, but is a better choice when it comes to API level authentication for server
+                            to server communication. It handles the authorization by a resource owner when a client accesses a resource server
+                            protected by an OAuth2 authorization server.
+                            The OAuth2 Authorization server by Soteria Networks is integrated with the SAML IDP server as its service provider,
+                            thus achieving the maximum authentication service reusability.
+                        </li>
+                        <li>The SAML Identity Provider is an web application that creates, maintains, and manages identity information for principals
+                            and provides principal authentication to other service providers within a federation, such as with web browser profiles.
+                            It can also be used for non-browser profile, i.e. API authentication, although less frequently.
+                        </li>
+                        <li>A TOTP (Time based one-time password) is by default integrated with the SAML Identity Provider as the second authentication factor.
+                            It sends a 6-digit token to the user through text or email services.
+                        </li>
+                        <li>The standard user and device lifecycle management is fully supported. In addition, multi-tenancy provides data segregation
+                            and low maintenance for shared environment.
+                        </li>
+                    </div>
                 </div>
           </div>
-        
-
       </div>
-    
-        
-    
-        
-    
     </div>
     
     
