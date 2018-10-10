@@ -13,6 +13,8 @@
 
     #products .section {
         color: #d4d4d4;
+        margin-top:10px;
+        margin-bottom:20px;
     }
     
     #products .section>div {
@@ -21,7 +23,7 @@
         padding: 25px 40px 35px 40px;
         border-top: solid #008580 7px;
         position: relative;
-        xxmin-height: 275px;
+        min-height: 230px;
     }
 
     #products a {
@@ -31,11 +33,23 @@
     }
     
 
-    @media (max-width: 767px)  {
-        #products .section>div {
-          min-height: auto;
-        }
+
+
+    @media (max-width: 1200px)  {
+        #products .section>div {  min-height: 320px;   }
     }
+    @media (max-width: 992px)  {
+        #products .section>div {   min-height: 465px; }
+    }
+
+    @media (max-width: 768px)  {
+        #products .section>div {  min-height: auto;   }
+    }
+
+
+
+
+
 
 
 

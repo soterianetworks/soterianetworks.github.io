@@ -10,14 +10,56 @@ body {
 
     background: white;
     color:black;
-    font-size: 16px;
+    font-size: 15px;
     background-size: cover;
     background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top right;
     overflow-x: hidden;
+    line-height: 1.46666667;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: justify;
 }
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .navbar-nav {
+  color:black!important;
+
+}
+
+h4{
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.2;
+  padding-bottom: 12px;
+  padding-top:10px;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color: #09afdf;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 
 /********  LOADING   *************/
 
@@ -48,10 +90,6 @@ body {
 
 
 
-h4{
-  margin: 0;
-  padding: 20px 0 10px 0;
-} 
 
 
 
@@ -87,16 +125,37 @@ h4{
 /**************************    HEADER   **************************/
 
 
+header .splash img {
 
-header .home-bg  img{  background-image: url('../images/home.jpg');}
+  width: 100%;
+  height: inherit;
+  transition: all .5s;
+}
 
-header .products-bg img { background-image: url('../images/products.jpg');}
 
-header .products-cip-bg img { background-image: url('../images/products/cip.jpg');}
+header .home-bg  img{  
+  background-image: url('../images/home.jpg');
+  background-size: cover;
+  background-position: top center;
+}
 
-header .solutions-bg img{ background-image: url('../images/solutions.jpg');}
+header .products-bg img { 
+    background-image: url('../images/products.jpg');
+    background-size: cover;
+    background-position: top center;
+}
 
-header .aboutus-bg img {  background-image: url('../images/aboutus.jpg');}
+header .solutions-bg img{ 
+    background-image: url('../images/solutions.jpg');
+    background-size: cover;
+    background-position: top right;
+}
+
+header .aboutus-bg img {  
+    background-image: url('../images/aboutus.jpg');
+    background-size: cover;
+    background-position: top left;
+}
 
 
 header {
@@ -110,7 +169,7 @@ header {
   padding-bottom: 10px;
   margin-bottom: 10px;
   z-index:200;
-  background: white;
+  background: black;
 }
 
 .complete header {
@@ -121,8 +180,6 @@ header {
 header ul {
     margin-top: 45px;
     white-space: nowrap;
-    xxbackground: #00000078;
-    xxbackground: linear-gradient(to right, #00000000 0%,#00000017 50%, #0000 100%);
     margin-bottom:0px!important;
 }
 
@@ -140,15 +197,6 @@ header .splash {
     right:0;
 }
 
-header .splash img {
-    background-position: top center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: inherit;
-    background-size: 100% 250px;
-    transition: all .5s;
-}
-
 
 header li{
   color:white;
@@ -156,17 +204,19 @@ header li{
   display: inline;
   font-weight: 500;
   font-size: 23px;
-  padding: 10px 20px;
+
 }
 
 header li a{
   color:white;
+  padding: 10px 20px;
 }
 
 
-header li:hover a{
+header li a:hover, header li a:focus{
   text-decoration: none;
   color: #01c5be!important;
+  outline: 0;
 }
 
 
@@ -174,6 +224,7 @@ header li a.active{
   text-decoration: none;
   color: #01c5be!important;
   text-shadow: 0px 0px 3px black;
+  outline: none;
 }
 
 
@@ -191,8 +242,9 @@ header .header-left {
 footer {
   text-align: center;
   background: black;
-  height: 35px;
+  height: 30px;
   padding: 5px;
+  margin-top: 5px;
   color: #eaeaea!important;
   position:relative;
   bottom:-60px;
@@ -256,7 +308,7 @@ hr{
         white-space: nowrap;
     }
     
-    header ul li{
+    header ul li a{
       font-weight: 200;
       font-size: 22px;
       padding: 4px;
@@ -266,13 +318,9 @@ hr{
 
 @media (max-width: 570px)  {
 
-    .header-left {
-        padding-top: 5px;
-    }
+    .header-left {  padding-top: 5px; }
 
-    footer{
-        font-size: 13px;
-    }
+    footer{ font-size: 13px; }
 }
 
 

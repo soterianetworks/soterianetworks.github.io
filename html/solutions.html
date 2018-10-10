@@ -1,21 +1,23 @@
     <style>
 
-      #solutions h4 {
-          padding-top:10px;
-          font-weight: 400;
-      }
-  
+
       #solutions .item {
-          margin-bottom: 50px;
+          margin-bottom: 55px;
           border-top: solid #000000bd 1px;
           position: relative;
       }
 
+      #solutions i {
+          height: 40px;
+
+      }
 
       #solutions a{
           position: absolute;
           bottom: -30px;
           left:0;
+          color:black!important;
+          cursor:pointer;
       }
 
       #solutions a[aria-expanded=false] .less { display: none; }
@@ -30,7 +32,7 @@
 
       
         
-        <div class="item">
+        <div class="item"  style="border-top:0;">
             <h4>Automatic Measurement & Compensation</h4>
                 <i class="fa fa-lock fa-3x  pull-left"></i>
                 This is a quality control system outside the CNC machine. PLC controlled adaptors collect parts from CNC machines,
@@ -46,7 +48,8 @@
 
                 </div>
                 <a  data-toggle="collapse" data-target="#amc-more" aria-expanded="false">
-                  <span class="more">See More...</span> <span class="less">See Less...</span>
+                  <span class="more fa fa-chevron-down fa-2x"></span> 
+                  <span class="less fa fa-chevron-up fa-2x"></span> 
                 </a> 
         </div>
 
@@ -63,7 +66,8 @@
 
                 </div>
                 <a  data-toggle="collapse" data-target="#xdc-more" aria-expanded="false">
-                    <span class="more">See More...</span> <span class="less">See Less...</span>
+                    <span class="more fa fa-chevron-down fa-2x"></span> 
+                    <span class="less fa fa-chevron-up fa-2x"></span> 
                 </a> 
         </div>
     
@@ -78,7 +82,8 @@
 
             </div>
             <a  data-toggle="collapse" data-target="#iot-more" aria-expanded="false">
-                <span class="more">See More...</span> <span class="less">See Less...</span>
+                <span class="more fa fa-chevron-down fa-2x"></span> 
+                <span class="less fa fa-chevron-up fa-2x"></span> 
             </a> 
         
         </div>
