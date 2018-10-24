@@ -30,11 +30,15 @@ app.controller("ProductsCtrl", function($scope, $location, $timeout) {
 app.controller("Products-CIP-Ctrl", function($scope, $location) {
     $scope.$parent.$parent.title ="Products > CIP"
     $scope.$parent.$parent.class ="products-bg"
+
+    $scope.showFullImage = false;
 });
 
 app.controller("Products-MES-Ctrl", function($scope, $location) {
     $scope.$parent.$parent.title ="Products > MES"
     $scope.$parent.$parent.class ="products-bg"
+
+    $scope.showFullImage = false;
 });
 
 app.controller("Products-IPS-Ctrl", function($scope, $location) {

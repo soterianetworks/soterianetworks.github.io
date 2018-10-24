@@ -8,12 +8,13 @@
       list-style-type: square;
   }
     
-  #cip #cip-img1 {
+  #cip #img {
       width: 100%;
       min-width: 300px;
       max-width: 600px;
-      padding-right: 20px;
+      padding-right: 5px;
       padding-bottom: 20px;
+      cursor: zoom-in;
   }
 
 
@@ -21,6 +22,31 @@
   #cip li {
       padding-bottom: 20px;
   }
+
+
+  #cip #img-full {
+    position:fixed;
+    top:0; bottom:0; right:0;left:0;
+    background: black;
+    z-index: 10000;
+    height:0;
+    padding:0px;
+    overflow:hidden;
+    opacity:0;
+    cursor: zoom-out;
+    transition: all .5s;
+  }
+
+  #cip #img-full.show {
+         height:100%;
+         opacity:1;
+         padding:10px;
+  }
+
+  @media (max-width: 570px)  {
+      #cip #img-full.show { padding:10px 0px; }
+  }
+
 
 </style>
     
@@ -32,8 +58,10 @@
                     <h4>Cloud Integration Platform (CIP)</h4>
                     <br>
 
-                        <img  id="cip-img1" class="pull-left" src="images/products/cip_shot.png">
-                       
+                        <img  id="img" class="pull-left" src="images/products/cip.png" ng-click="showFullImage=true">
+                        <div id="img-full" ng-class="{'show':showFullImage}" ng-click="showFullImage=false">
+                            <img   src="images/products/cip-full.png">
+                        </div>
                         <p>This platform has served as the foundation for multiple internal and external software products.
                            The essential components include: API Gateway, SAML Identity Server, OAuth2 Server, TOTP Server,
                            Asset Management, Organization Management, Role and Attribute Based Access Control.<br></p>
