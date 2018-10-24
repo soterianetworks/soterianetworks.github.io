@@ -329,6 +329,10 @@ hr{
     .header-left {  padding-top: 5px; }
 
     footer{ font-size: 11px; }
+
+    span.break-xs {
+        display:block;
+    }
 }
 
 
