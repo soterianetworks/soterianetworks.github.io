@@ -2,7 +2,7 @@
 
 
       #solutions .item {
-          margin-bottom: 45px;
+          margin-bottom: 80px;
           border-top: solid #000000bd 1px;
           position: relative;
       }
@@ -19,7 +19,7 @@
       #solutions a{
           position: absolute;
           bottom: -30px;
-          left:0;
+          right:0;
           color:black!important;
           cursor:pointer;
       }
@@ -38,70 +38,80 @@
     
     <div id="solutions" style="padding:0 30px;" ng-controller="SolutionsCtrl"> 
     
-
-      
-        
         <div class="item"  style="border-top:0;">
             <h4>Automatic Measurement & Compensation</h4>
-                <i class="fa fa-lock fa-3x  pull-left"></i>
+                <i class="fa fa-align-justify fa-3x  pull-left"></i>
                 <p>
-                    This is a quality control system outside the CNC machine. PLC controlled adaptors collect parts from CNC machines,
-                    transfer the parts to the measurement unit; The measurement unit gathers the dimensions of the parts and sends to
-                    the image processing software. The software extracts the dimensions of interest, compares them with the product
-                    design file and decide if the parts are comforming to the designs.
+                    This is an automatic equipment used next the CNC machines. It uses plug-n-play robotic arms to
+                    transport parts into the measurement station where the dimensions of interest are measured.
+                    The measurement data is then compared with the design specs. If the data is beyond the tolerance,
+                    the corresponding part will be discarded. If the data is within the tolerance, but warrants a
+                    cutting tool offset compensation, an offset is written to the CNC machine over a network connection.
                 </p>
 
                 <p id="amc-more" class="collapse multi-collapse indent" >
                     <br>
-                     We partner with Caron Engineering and integrate
-                    the compensation mechanism to adjust the CNC machine settings before defects occur.
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    We partner with Caron Engineering to create this state of art device.
+                    It combines quality assurance and CNC machine configuration capabilities. The PLC control
+                    will be responsible for coordinating the robotic arm, the CMM device and the software components
+                    for image processing, offset calculation and write back to the CNC machines.
                 </p>
                 <a  data-toggle="collapse" data-target="#amc-more" aria-expanded="false">
-                  <span class="more fa fa-chevron-down fa-2x"></span> 
-                  <span class="less fa fa-chevron-up fa-2x"></span> 
+                  <span class="more fa fa-angle-double-down fa-2x"></span>
+                  <span class="less fa fa-angle-double-up fa-2x"></span>
                 </a> 
         </div>
 
 
     
         <div class="item">
-            <h4>XDC</h4>
-                <i class="fa fa-lock fa-3x  pull-left"></i>
+            <h4>Realtime Remote Data Collection For Quality Assurance </h4>
+                <i class="fa fa-align-justify fa-3x  pull-left"></i>
                 <p> 
-                    Smart manufacturing is the core of Industry 4.0. IoT device connectivity to the cloud offers many possibilities to improve manufacturing process. In precision finishing, in-process and post-process quality control requires part variations to be converted to CNC control offsets. 
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                    One of our customers is a manufacturer supplying small medal parts for the telecommunication industry.
+                    Their operators are responsible for sampling parts on the workshop floor and recording measurement
+                    data in paper forms. At the end of the day, another person will enter the data into a computer.
+                    The team in the QA room conduct additional measurement and manually type data into Excel
+                    sheets on computers. The data in different Excel sheets will be saved in computer for record checking
+                    purpose.
+                    <br><br>
+                    This practice has several problems. It's labor intensive and error prone; It doesn't prevent workers
+                    from faking data when not supervised; Data is delayed and not utilized for further analysis.
                 </p>
                
                 <p id="xdc-more" class="collapse multi-collapse indent" >
                     <br>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    We identified a newly released bluetooth caliper on the market that can pair with a bluetooth enabled
+                    computer pad or regular computer without any other hardware and software required. This caliper is
+                    even cheaper than the popular brands that require wireless adaptor and connection cables. After we
+                    converted the Excel sheets/forms to web pages in the MES platform, the QA productivity improved by
+                    30% instantly with added realtime quality tracking capability.
                 </p>
                 <a  data-toggle="collapse" data-target="#xdc-more" aria-expanded="false">
-                    <span class="more fa fa-chevron-down fa-2x"></span> 
-                    <span class="less fa fa-chevron-up fa-2x"></span> 
+                    <span class="more fa fa-angle-double-down fa-2x"></span>
+                    <span class="less fa fa-angle-double-up fa-2x"></span>
                 </a> 
         </div>
     
     
         <div class="item">
             <h4>Federated Remote IoT Access</h4>
-            <i class="fa fa-lock fa-3x  pull-left"></i>
+            <i class="fa fa-align-justify fa-3x  pull-left"></i>
             <p>
-                A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage servers hosted on the customer sites. Customer security concern requires support personnel visit that results in high cost and slow service. 
-                A federated remote access solution is desired to allow customers to participate in the decision process. 
+                A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage
+                servers hosted on the customer sites. Customer security concern requires support personnel visit that
+                results in high cost and slow service. A federated remote access solution is desired to allow customers
+                to participate in the decision process.
             </p>
             
             <p id="iot-more" class="collapse multi-collapse indent" >
                 <br>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                With the first rollout of a solution designed by us, it eliminates annual loss of 22,000 man hours,
+                translating to $2M in savings. Long term benefit also includes saved additional license cost each year.
             </p>
             <a  data-toggle="collapse" data-target="#iot-more" aria-expanded="false">
-                <span class="more fa fa-chevron-down fa-2x"></span> 
-                <span class="less fa fa-chevron-up fa-2x"></span> 
+                <span class="more fa fa-angle-double-down fa-2x"></span>
+                <span class="less fa fa-angle-double-up fa-2x"></span>
             </a> 
         
         </div>
