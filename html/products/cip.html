@@ -30,33 +30,40 @@
           <div class="col-xs-12">
                 <div class="section">
                     <h4>Cloud Integration Platform (CIP)</h4>
-      
-                  
+                    <br>
+
                         <img  id="cip-img1" class="pull-left" src="images/products/cip_shot.png">
                        
-                      
-                        <li>The API Gateway provides a great infrastructure component that simplifies service oriented architect implementation.
-                            APIs are registered with the API gateway. Requests for the services are routed through the API gateway.
-                            The API gateway implements the authorization enforcement based on the privileges of the principal in the request.
+                        <p>This platform has served as the foundation for multiple internal and external software products.
+                           The essential components include: API Gateway, SAML Identity Server, OAuth2 Server, TOTP Server,
+                           Asset Management, Organization Management, Role and Attribute Based Access Control.<br></p>
+
+                        <li><b>API Gateway</b>: a great infrastructure component that simplifies service oriented architect
+                            implementation. APIs are registered with the API gateway. Requests are routed to the desired
+                            micro services through the gateway. The API gateway also implements the authorization enforcement
+                            based on the privileges of the principal in the request.
                         </li>
-                        <li>OAuth2 provides authorization flows for web applications, desktop applications, mobile phones, and living room devices.
-                            It offers similar single sign on capability, but is a better choice when it comes to API level authentication for server
-                            to server communication. It handles the authorization by a resource owner when a client accesses a resource server
-                            protected by an OAuth2 authorization server.
-                            The OAuth2 Authorization server by Soteria Networks is integrated with the SAML IDP server as its service provider,
-                            thus achieving the maximum authentication service reusability.
+                        <li><b>SAML Identity Provider (IDP)</b>: a web application that creates, maintains, and manages
+                            identity information for principals and provides principal authentication to other service
+                            providers within a federation. It is the de facto standard for enterprise.
                         </li>
-                        <li>The SAML Identity Provider is an web application that creates, maintains, and manages identity information for principals
-                            and provides principal authentication to other service providers within a federation, such as with web browser profiles.
-                            It can also be used for non-browser profile, i.e. API authentication, although less frequently.
+                        <li><b>OAuth2 Server</b>: provides authorization flows for web applications, desktop applications, mobile
+                            phones, and living room devices. It offers similar single sign on capability as SAML IDP.
+                            Our OAuth2 server is integrated with the SAML IDP server as its service provider, this allows
+                            authentication service to be shared.
                         </li>
-                        <li>A TOTP (Time based one-time password) is by default integrated with the SAML Identity Provider as the second authentication factor.
-                            It sends a 6-digit token to the user through text or email services.
+                        <li><b>TOTP Server</b>: a time based one-time passcode server. It is integrated with our SAML IDP
+                            to support multi-factor authentication. The passcode is a 6-digit token sent to the user
+                            through SMS or email.
                         </li>
-                        <li>The standard user and device lifecycle management is fully supported. In addition, multi-tenancy provides data segregation
-                            and low maintenance for shared environment.
+                        <li><b>Asset Management</b>: the standard user and device lifecycle management is fully supported. In addition, multi-tenancy
+                            supports data segregation and low maintenance for shared environment.
                         </li>
-           
+                        <li><b>Organization Management</b>: supports corporation level personnel management。
+                        </li>
+                        <li><b>Role and Attribute Based Access Control</b>: a NIST conforming implementation, it enables attribute
+                            based data filtering as well.
+                        </li>
                 </div>
           </div>
       </div>
