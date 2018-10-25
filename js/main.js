@@ -30,24 +30,25 @@ app.controller("ProductsCtrl", function($scope, $location, $timeout) {
 app.controller("Products-CIP-Ctrl", function($scope, $location) {
     $scope.$parent.$parent.title ="Products > CIP"
     $scope.$parent.$parent.class ="products-bg"
+
     $scope.showFullImage = false;
 });
 
 app.controller("Products-MES-Ctrl", function($scope, $location) {
     $scope.$parent.$parent.title ="Products > MES"
     $scope.$parent.$parent.class ="products-bg"
+
     $scope.showFullImage = false;
 });
 
-app.controller("Products-IOT-Ctrl", function($scope, $location) {
-    $scope.$parent.$parent.title ="Products > IOT"
+app.controller("Products-IPS-Ctrl", function($scope, $location) {
+    $scope.$parent.$parent.title ="Products > IoT Platform"
     $scope.$parent.$parent.class ="products-bg"
-    $scope.showFullImage = false;
 });
 
 app.controller("SolutionsCtrl", function($scope, $location) {
      $scope.$parent.$parent.title ="Solutions"
-     $scope.$parent.$parent.subtitle =""
+     $scope.$parent.$parent.subtitle ="xxxxxxxx"
      $scope.$parent.$parent.class ="solutions-bg"
 });
 
@@ -70,7 +71,7 @@ app.config(function($routeProvider) {
     .when("/products",  {  templateUrl : "html/products.html"  })
     .when("/products/cip",  {  templateUrl : "html/products/cip.html"  })
     .when("/products/mes",  {  templateUrl : "html/products/mes.html"  })
-    .when("/products/iot",  {  templateUrl : "html/products/iot.html"  })
+    .when("/products/ips",  {  templateUrl : "html/products/ips.html"  })
 
     .when("/aboutus",     {  templateUrl : "html/aboutus.html"  })
     .when("/company",   {  templateUrl : "html/company.html"   })

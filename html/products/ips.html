@@ -1,0 +1,82 @@
+
+
+
+<style>
+
+  #ips li{
+      list-style-type: square;
+      padding-bottom: 20px;
+  }
+
+  #ips #img {
+      width: 100%;
+      min-width: 300px;
+      max-width: 480px;
+      padding-right: 5px;
+      padding-bottom: 20px;
+      cursor: zoom-in;
+  }
+
+  #ips #img-full {
+    position:fixed;
+    top:0; bottom:0; right:0;left:0;
+    background: black;
+    z-index: 10000;
+    height:0;
+    padding:0px;
+    overflow:hidden;
+    opacity:0;
+    cursor: zoom-out;
+    transition: all .5s;
+  }
+
+  #ips #img-full.show {
+         height:100%;
+         opacity:1;
+         padding:10px;
+  }
+
+  @media (max-width: 570px)  {
+      # #img-full.show { padding:10px 0px; }
+}
+    
+  </style>
+  
+  <div id="ips" class="container"  ng-controller="Products-IPS-Ctrl" >
+  
+  
+    <div class="row">
+        <div class="col-xs-12">
+              <div class="section">
+                  <h4>IoT Platform</h4>
+                  <br>
+                  <img id="img" class="pull-left" src="images/products/mes.png" ng-click="showFullImage=true">
+                  <div id="img-full" ng-class="{'show':showFullImage}" ng-click="showFullImage=false">
+                      <img ng-class="{'show':showFullImage}" ng-click="showFullImage=false"   src="images/products/mes-full.png">
+                  </div>
+
+                  <p>This IoT Platform has been used in multiple IoT projects. Use cases includes humidity, temperature,
+                      electric current, vehicle tracking and so on. <br>
+                  </p>
+
+                  <li><b>Device Gateway</b> is the data entry point where different communication protocols are used to
+                      extract data from incoming data stream.
+                  </li>
+
+                  <li><b>Messing Bus</b> is the data exchange point. Data is processed by micro services and results are
+                      persisted, or published to the Message Bus for other components to use, such as websocket enabled UI pages.
+                  </li>
+              </div>
+        </div>
+      
+
+    </div>
+  
+      
+  
+      
+  
+  </div>
+  
+  
+
