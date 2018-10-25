@@ -42,7 +42,7 @@ app.controller("Products-MES-Ctrl", function($scope, $location) {
 });
 
 app.controller("Products-IPS-Ctrl", function($scope, $location) {
-    $scope.$parent.$parent.title ="Products > IPS"
+    $scope.$parent.$parent.title ="Products > IoT Platform"
     $scope.$parent.$parent.class ="products-bg"
 });
 
