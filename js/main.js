@@ -41,7 +41,7 @@ app.controller("Products-MES-Ctrl", function($scope, $location) {
     $scope.showFullImage = false;
 });
 
-app.controller("Products-IPS-Ctrl", function($scope, $location) {
+app.controller("Products-IOT-Ctrl", function($scope, $location) {
     $scope.$parent.$parent.title ="Products > IoT Platform"
     $scope.$parent.$parent.class ="products-bg"
 });
@@ -71,22 +71,15 @@ app.config(function($routeProvider) {
     .when("/products",  {  templateUrl : "html/products.html"  })
     .when("/products/cip",  {  templateUrl : "html/products/cip.html"  })
     .when("/products/mes",  {  templateUrl : "html/products/mes.html"  })
-    .when("/products/ips",  {  templateUrl : "html/products/ips.html"  })
+    .when("/products/iot",  {  templateUrl : "html/products/iot.html"  })
 
     .when("/aboutus",     {  templateUrl : "html/aboutus.html"  })
     .when("/company",   {  templateUrl : "html/company.html"   })
     .when("/solutions", {  templateUrl : "html/solutions.html" })
 
     .otherwise({redirectTo:'/home'});
-
-
-
-
 });
 
-
-
-
-	$(function(){
-      setTimeout(function(){  $('body').addClass('complete')  }, 1000)
-	});
+$(function(){
+     setTimeout(function(){  $('body').addClass('complete')  }, 1000)
+});
