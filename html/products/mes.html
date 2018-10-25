@@ -1,41 +1,6 @@
 
 
 
-<style>
-
-  #mes #img {
-      width: 100%;
-      min-width: 300px;
-      max-width: 600px;
-      padding-right: 5px;
-      padding-bottom: 20px;
-      cursor: zoom-in;
-  }
-
-  #mes #img-full {
-      position:fixed;
-      top:0; bottom:0; right:0;left:0;
-      background: black;
-      z-index: 10000;
-      height:0;
-      padding:0px;
-      overflow:hidden;
-      opacity:0;
-      cursor: zoom-out;
-      transition: all .5s;
-  }
-
-  #mes #img-full.show {
-      height:100%;
-      opacity:1;
-      padding:10px;
-  }
-
-  @media (max-width: 570px)  {
-      #cip #img-full.show { padding:10px 0px; }
-  }
-
-  </style>
   
   <div id="mes" class="container"  ng-controller="Products-MES-Ctrl" >
   
@@ -51,18 +16,15 @@
 
                       This SaaS application supports factory level data filtering, product, machine, cutter and mold management,
                       NC file versioning, job assignment, quality tracking and real-time reporting.
-                  </div>
               </div>
         </div>
+    </div>
+  </div>
+  
+      
+  
       
 
-    </div>
-  
-      
-  
-      
-  
-  </div>
   
   
 
