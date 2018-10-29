@@ -2,8 +2,8 @@
 
 
       #solutions .item {
-          margin-bottom: 80px;
-          border-top: solid #000000bd 1px;
+          margin-bottom: 50px;
+          border-top: solid #232323 1px;
           position: relative;
       }
 
@@ -31,6 +31,12 @@
       #solutions a[aria-expanded=false] .less { display: none; }
       #solutions a[aria-expanded=true]  .more { display: none; }
 
+      @media (max-width: 450px)  {
+
+          #solutions h4{ font-size: 17px; }
+      }
+
+
     </style>
     
 
@@ -41,7 +47,7 @@
             <h4>Automatic Measurement <span class="break-xs"></span>& Compensation</h4>
                 <i class="fa fa-align-justify fa-3x  pull-left"></i>
                 <p>
-                    This is an automatic quality control equipment. It uses plug-n-play robotic arms to
+                    This equipment provides automatic quality control. It uses plug-n-play robotic arms to
                     transport parts into the measurement station where the dimensions of interest are measured.
                     The measurement data is then compared with the design specs. If the data is beyond the tolerance,
                     the corresponding part will be discarded. If the data is within the tolerance, but warrants a
@@ -50,7 +56,7 @@
 
                 <p id="amc-more" class="collapse multi-collapse indent" >
                     <br>
-                    We partnered with Caron Engineering to create this state of the art device.
+                    We have partnered with Caron Engineering to create this state of the art device.
                     It combines quality assurance and CNC machine configuration capabilities. The PLC control
                     is responsible for coordinating the robotic arm, CMM device and software components
                     for image processing. The offset is calculated and written back to the CNC machines.
@@ -67,24 +73,25 @@
             <h4>Realtime Remote Data Collection <span class="break-xs"></span> For Quality Assurance </h4>
                 <i class="fa fa-align-justify fa-3x  pull-left"></i>
                 <p> 
-                    One of our customers is a manufacturer supplying small medal parts for the telecommunication industry.
+                    One of our customers is a manufacturer supplying small metal parts for the telecommunication industry.
                     Their operators are responsible for sampling parts on the workshop floor and recording measurement
                     data in paper forms. At the end of the day, another person will enter the data into a computer.
                     The team in the QA room conduct additional measurements and manually type data into Excel
-                    sheets on computers. The data in different Excel sheets will be saved in the computer for record checking
-                    purpose.
-                    <br><br>
-                    This practice has several problems. It's labor intensive and error prone; It doesn't prevent workers
-                    from faking data when not supervised; Data is delayed and not utilized for further analysis.
+                    sheets on computers. This data will be saved in the computer for record checking
+                    purposes.
+
                 </p>
                
                 <p id="xdc-more" class="collapse multi-collapse indent" >
                     <br>
+                    This practice has several problems: it's labor intensive and error prone; it doesn't prevent workers
+                    from entering illegitimate data; data is delayed and not utilized for further analysis.
+                    <br><br>
                     We identified a newly released bluetooth caliper on the market that can pair with a bluetooth enabled
-                    computer pad or regular computer without any other hardware and software required. This caliper is
+                    computer pad device or regular computer without any other hardware or software required. This caliper is
                     even cheaper than the popular brands that require wireless adaptor and connection cables. After we
                     converted the Excel sheets/forms to web pages in the MES platform, the QA productivity improved by
-                    30% instantly with added realtime quality tracking capability.
+                    30% instantly with realtime quality tracking capability.
                 </p>
                 <a  data-toggle="collapse" data-target="#xdc-more" aria-expanded="false">
                     <span class="more fa fa-angle-double-down fa-2x"></span>
@@ -97,7 +104,7 @@
             <h4>Federated Remote IoT Access</h4>
             <i class="fa fa-align-justify fa-3x  pull-left"></i>
             <p>
-                A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage
+                A Fortune 500 company provides monitoring and diagnostic services to hundreds of thousands of storage
                 servers hosted on the customer sites. Customer security concern requires support personnel visit that
                 results in high cost and slow service. A federated remote access solution is desired to allow customers
                 to participate in the decision process.
@@ -105,8 +112,8 @@
             
             <p id="iot-more" class="collapse multi-collapse indent" >
                 <br>
-                With the first rollout of a solution designed by us, it eliminates annual loss of 22,000 man hours,
-                translating to $2M in savings. Long term benefit also includes saved additional license cost each year.
+                The first rollout of our solution eliminated an annual loss of 22,000 man hours,
+                translating to $2M in savings. Benefits also included saved licensing costs each year.
             </p>
             <a  data-toggle="collapse" data-target="#iot-more" aria-expanded="false">
                 <span class="more fa fa-angle-double-down fa-2x"></span>

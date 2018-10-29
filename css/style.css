@@ -1,29 +1,5 @@
 
 
-html, body {
-    height:100%;
-    width: 100%;
-}
-
-
-body {
-
-    background: white;
-    color:black;
-    font-size: 16px;
-    background-size: cover;
-    background-image: url('../images/bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top right;
-    overflow-x: hidden;
-    line-height: 1.46666667;
-    background-color: #ffffff;
-    font-weight: 400;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align: justify;
-}
-
 
 
 
@@ -61,39 +37,6 @@ a{
   transition: all 0.2s ease-in-out;
 }
 
-
-/********  LOADING   *************/
-
-.loading{
-    position: fixed;
-    top: 0; bottom: 0; left:0; right:0;
-    z-index: 10000;
-    background: black;
-    opacity:1;
-    transition: all .5s;
-}
-
-.loading div {
-    width: 200px;
-    margin: 400px auto;
-    text-align:center;
-}
-
-.complete .loading {
-    opacity:0;
-    z-index:-1;
-}
-
- .main{
-  height: 0;
-  overflow:hidden;
-}
-
-.complete .main{
-    height:auto;
-    min-height: calc(100% - 35px);
-    overflow: visible;
-}
 
 
 
@@ -317,7 +260,7 @@ hr{
     }
     
     header ul li a{
-      font-weight: 200;
+      xxfont-weight: 300;
       font-size: 22px;
       padding: 4px;
     }
@@ -336,6 +279,19 @@ hr{
 }
 
 
+@media (max-width: 450px)  {
+
+    footer{ font-size: 9px; }
+
+    header .col-xs-12 {
+        padding:0;
+    }
+
+    header ul li a{
+        font-size: 17px;
+        padding: 4px;
+    }
+}
 
 
 
@@ -398,3 +354,10 @@ hr{
   @media (max-width: 570px)  {
        #img-full.show { padding:10px 0px; }
   }
+
+/** microsoft edge only **/
+@supports (-ms-ime-align:auto) {
+    #cip li, #mes li ,#iot li  {
+        list-style-type: none!important;;
+    }
+}

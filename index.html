@@ -14,10 +14,81 @@
 
 	<link rel="shortcut icon" href="images/favicon.ico">
 
+
+
+  <style>
+        /********  adding this css inline so it will be available immediately   *************/
+        html, body {
+            height:100%;
+            width: 100%;
+        }
+        
+        
+        body {
+        
+            background: white;
+            color:black;
+            font-size: 16px!important;
+            background-size: cover;
+            background-image: url('../images/bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top right;
+            overflow-x: hidden;
+            line-height: 1.46666667;
+            background-color: #ffffff;
+            font-weight: 400;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-align: justify;
+        }
+      
+
+        
+
+        .loading{
+            position: fixed;
+            top: 0; bottom: 0; left:0; right:0;
+            z-index: 10000;
+            background: black;
+            opacity:1;
+            transition: all .5s;
+        }
+
+        .loading div {
+            width: 200px;
+            margin: 400px auto;
+            text-align:center;
+        }
+
+        .complete .loading {
+            opacity:0;
+            z-index:-1;
+        }
+
+        .main{
+          height: 0;
+          overflow:hidden;
+        }
+
+        .complete .main{
+            height:auto;
+            min-height: calc(100% - 35px);
+            overflow: visible;
+        }
+
+
+
+        </style>
+      
+
+
+
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" >
+
+
 
 </head>
 
