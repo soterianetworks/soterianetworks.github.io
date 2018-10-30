@@ -1,0 +1,108 @@
+
+
+
+<style>
+
+
+  #cip li{
+      list-style-type: square;
+      padding-bottom: 20px;
+  }
+    
+  #cip #img {
+      width: 100%;
+      min-width: 300px;
+      max-width: 480px;
+      padding-right: 5px;
+      padding-bottom: 20px;
+      cursor: zoom-in;
+  }
+
+
+  #cip #img-full {
+    position:fixed;
+    top:0; bottom:0; right:0;left:0;
+    background: black;
+    z-index: 10000;
+    height:0;
+    padding:0px;
+    overflow:hidden;
+    opacity:0;
+    cursor: zoom-out;
+    transition: all .5s;
+  }
+
+  #cip #img-full.show {
+         height:100%;
+         opacity:1;
+         padding:10px;
+  }
+
+  @media (max-width: 570px)  {
+      #cip #img-full.show { padding:10px 0px; }
+  }
+
+
+
+
+
+</style>
+
+
+
+
+    <div class="container" id="cip" ng-controller="Products-CIP-Ctrl" >
+
+      <div class="row">
+          <div class="col-xs-12">
+                <div class="section">
+                    <h4>Cloud Integration Platform (CIP)</h4>
+                    <br>
+
+                        <img  id="img" class="pull-left" src="images/products/cip.png" ng-click="showFullImage=true">
+                        <div id="img-full" ng-class="{'show':showFullImage}" ng-click="showFullImage=false">
+                            <img   src="images/products/cip-full.png">
+                        </div>
+                        <p>This platform has served as the foundation for multiple internal and external software products.
+                           The essential components include: API Gateway, SAML Identity Server, OAuth2 Server, TOTP Server,
+                           Asset Management, Organization Management, Role and Attribute Based Access Control.<br></p>
+                        <ul>
+
+
+
+
+
+                            <li>The <b>API Gateway</b> is a great infrastructure component that simplifies service oriented architect
+                                implementation. APIs are registered with the API gateway. Requests are routed to the desired
+                                micro services through the gateway. The API gateway also implements the authorization enforcement
+                                based on the privileges of the principal in the request.
+                            </li>
+                            <li>The <b>SAML Identity Provider (IDP)</b> is a web application that creates, maintains, and manages
+                                identity information for principals and provides principal authentication to other service
+                                providers within a federation. It is the de facto standard for enterprise.
+                            </li>
+                            <li>The <b>OAuth2 Server</b> provides authorization flows for web applications, desktop applications, mobile
+                                phones, and living room devices. It offers similar single sign on capability as SAML IDP.
+                                Our OAuth2 server is integrated with the SAML IDP server as its service provider; this allows
+                                authentication services to be shared.
+                            </li>
+                            <li>The <b>TOTP Server</b> is a time based one-time passcode server. It is integrated with our SAML IDP
+                                to support multi-factor authentication. The passcode is a 6-digit token sent to the user
+                                through SMS or email.
+                            </li>
+                            <li><b>Asset Management</b> fully supports the standard user and device lifecycle management. In addition,
+                                multi-tenancy enables data segregation and offers low maintenance in a shared environment.
+                            </li>
+                            <li><b>Organization Management</b> supports corporation level personnel management.
+                            </li>
+                            <li><b>Role and Attribute Based Access Control</b> offers a NIST(National Institute of Standards and Technology) conforming implementation, and enables attribute
+                                based data filtering.
+                            </li>
+                        </ul>
+                </div>
+          </div>
+      </div>
+    </div>
+    
+    
+

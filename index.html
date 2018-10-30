@@ -1,772 +1,155 @@
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
-	<!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<title>Soteria Networks</title>
-		<meta name="description" content="Soteria Networks Official Web Site">
-		<meta name="author" content="soteria">
+<html lang="en"  ng-app="app">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Soteria Networks</title>
+	<meta name="description" content="Soteria Networks Official Web Site">
+	<meta name="author" content="soteria">
 
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-
-		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-		<!-- Fontello CSS -->
-		<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
-
-		<!-- Plugins -->
-		<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="plugins/rs-plugin/css/settings.css" rel="stylesheet">
-		<link href="css/animations.css" rel="stylesheet">
-		<link href="plugins/hover/hover-min.css" rel="stylesheet">
-		<link href="plugins/morphext/morphext.css" rel="stylesheet">
-
-		<!-- The Project core CSS file -->
-		<link href="css/style.css" rel="stylesheet" >
-
-		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="css/skins/light_blue.css" rel="stylesheet">
-
-	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<!-- body classes:  -->
-	<!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
-	<!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
-	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
-	<!-- "gradient-background-header": applies gradient background to header -->
-	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
-
-	<body class="no-trans front-page gradient-background-header">
-		<div id="home"></div>
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
-		
-		<!-- page wrapper start -->
-		<!-- ================ -->
-		<div class="page-wrapper">
-		
-			<!-- header-container start -->
-			<div class="header-container">
-				
-				<!-- header start -->
-				<!-- classes:  -->
-				<!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
-				<!-- "dark": dark version of header e.g. class="header dark clearfix" -->
-				<!-- "full-width": mandatory class for the full-width menu layout -->
-				<!-- "centered": mandatory class for the centered logo layout -->
-				<!-- ================ -->
-
-				<header class="header fixed clearfix">
-					
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3 ">
-								<!-- header-left start -->
-								<!-- ================ -->
-								<div class="header-left clearfix">
-									<!-- logo -->
-									<div id="logo" class="logo">
-										<a href="index.html"><img id="logo_img" src="images/1_horizontal.274x79.png" alt="Soteria Networks"></a>
-									</div>
-								</div>
-								<!-- header-left end -->
-
-							</div>
-							<div class="col-md-9">
-								<!-- header-right start -->
-								<!-- ================ -->
-								<div class="header-right clearfix">
-									
-								<!-- main-navigation start -->
-								<!-- classes: -->
-								<!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
-								<!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
-								<!-- "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns -->
-								<!-- ================ -->
-								<div class="main-navigation  animated with-dropdown-buttons">
-									<!-- navbar start -->
-									<!-- ================ -->
-									<nav class="navbar navbar-default" role="navigation">
-										<div class="container-fluid">
-											<!-- Toggle get grouped for better mobile display -->
-											<div class="navbar-header">
-												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-													<span class="sr-only">Toggle navigation</span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-												</button>
-											</div>
-											<!-- Collect the nav links, forms, and other content for toggling -->
-											<div class="collapse navbar-collapse" id="navbar-collapse-1">
-												<!-- main-menu -->
-												<ul id="navigation" class="nav navbar-nav ">
-													<li><a data="home">Home</a></li>
-                                                    <li><a data="product">Products</a></li>
-                                                    <li><a data="support">Solutions</a></li>
-													<li><a data="casestudy">Case Study</a></li>
-													<li><a data="whyus">Why Us</a></li>
-													<li><a data="footer">Company</a></li>
-												</ul>
-												<!-- main-menu end -->
-											</div>
-										</div>
-									</nav>
-									<!-- navbar end -->
-								</div>
-								<!-- main-navigation end -->
-								</div>
-								<!-- header-right end -->
-							</div>
-						</div>
-					</div>
-				</header>
-				<!-- header end -->
-			</div>
-			<!-- header-container end -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 
 
-			<div id="page-start"></div>
 
-			<!-- section start -->
-			<!-- ================ -->
+  <style>
+        /********  adding this css inline so it will be available immediately   *************/
+        html, body {
+            height:100%;
+            width: 100%;
+        }
+        
+        
+        body {
+        
+            background: white;
+            color:black;
+            font-size: 16px!important;
+            background-size: cover;
+            background-image: url('../images/bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top right;
+            overflow-x: hidden;
+            line-height: 1.46666667;
+            background-color: #ffffff;
+            font-weight: 400;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-align: justify;
+        }
+      
 
-			<div class="main-container">
+        
 
-				<div id="myCarousel" class="carousel slide container" data-ride="carousel">
+        .loading{
+            position: fixed;
+            top: 0; bottom: 0; left:0; right:0;
+            z-index: 10000;
+            background: black;
+            opacity:1;
+            transition: all .5s;
+        }
 
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
+        .loading div {
+            width: 200px;
+            margin: 400px auto;
+            text-align:center;
+        }
 
-					<div class="carousel-inner">
-						<div class="item active ">
-							<article class="blogpost shadow light-gray-bg bordered">
-								<header>
-									<h2>Soteria Networks Formed Joint Venture on Smart Manufacturing </h2>
-									<div class="post-info">
-												<span class="post-date">
-													<i class="icon-calendar"></i>
-                                                    <span class="month">Feb</span>
-                                                    <span class="day">10th</span>
-													<span class="year">2018</span>
-												</span>
-									</div>
-								</header>
-								<div class="blogpost-content">
-									<p> Soteria Networks and XDC Industries (China) formed a joint venture to create a smart manufacturing
-										solution. XDC Industries is a precision manufacturing company that went IPO in the beginning of 2017.
-										Soteria Netwoprks will be responsible for product R&D and operation while XDC contributes to the
-										business development.
-									</p>
-								</div>
-							</article>
-						</div>
+        .complete .loading {
+            opacity:0;
+            z-index:-1;
+        }
 
-						<div class="item">
-							<article class="blogpost shadow light-gray-bg bordered">
-								<header>
-									<h2>Soteria Networks Accomplished a PUF Chip Design</h2>
-									<div class="post-info">
-												<span class="post-date">
-													<i class="icon-calendar"></i>
-                                                    <span class="month">July</span>
-                                                    <span class="day">15th</span>
-													<span class="year">2017</span>
-												</span>
-									</div>
-								</header>
-								<div class="blogpost-content">
-									<p> Soteria Networks reached a major milestone by releasing its first PUF chip design. An IoT device can
-										leverage the unclonable fingerprint of the PUF chip as its private key for device authentication and
-										secure data transmission among the devices and between the device and its central service.
-									</p>
-								</div>
-							</article>
-						</div>
-						<div class="item">
-							<article class="blogpost shadow light-gray-bg bordered">
-								<header>
-									<h2>Soteria Networks Released Cloud Integration Platform (CIP) 1.0</h2>
-									<div class="post-info">
-												<span class="post-date">
-													<i class="icon-calendar"></i>
-                                                    <span class="month">May</span>
-                                                    <span class="day">30th</span>
-													<span class="year">2017</span>
-												</span>
-									</div>
-								</header>
-								<div class="blogpost-content">
-									<p> Soteria Networks released the first version of its Cloud Integration Platform. This platform consists
-										many micro services that enables fast cloud application deployment, including API gateway, SAML IDP,
-										OAuth2 Authorization, MFA, User/Device Lifecycle Management. All the services are docker deployment enabled.
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
+        .main{
+          height: 0;
+          overflow:hidden;
+        }
 
-				</div>
-			</div>
-
-			<!-- section start -->
-			<!-- ================ -->
-
-			<section id="product" class="main-container clearfix" >
-				<div class="container">
-					<h3>Products</h3>
-					<div class="separator-2"></div>
-					<div class="row">
-
-						<div class="col-md-12">
-
-							<h4 class="title">Cloud Integration Platform</h4>
-							<!-- accordion start -->
-							<div class="panel-group collapse-style-1" id="accordion-cis">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis1" class="collapsed">
-												<i class="fa fa-key" aria-hidden="true"></i> API Gateway
-											</a>
-										</h4>
-									</div>
-									<div id="accordion-cis1" class="panel-collapse collapse">
-										<div class="panel-body">The API Gateway provides a great infrastructure component that simplifies service oriented architect implementation. APIs are registered with the API gateway. Requests for the services are routed through the API gateway.
-											<br><br>
-											The API gateway implements the authorization enforcement based on the privileges of the principal in the request.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis2" class="collapsed">
-												OAuth2 Authorization Server
-											</a>
-										</h4>
-									</div>
-									<div id="accordion-cis2" class="panel-collapse collapse">
-										<div class="panel-body">
-											OAuth2 provides authorization flows for web applications, desktop applications, mobile phones, and living room devices. It offers similar single sign on capability, but is a better choice when it comes to API level authentication for server to server communication. It handles the authorization by a resource owner when a client accesses a resource server protected by an OAuth2 authorization server.
-											<br><br>
-											The OAuth2 Authorization server by Soteria Networks is integrated with the SAML IDP server as its service provider, thus achieving the maximum authentication service reusability.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis3" class="collapsed">
-												SAML Identity Provider
-											</a>
-										</h4>
-									</div>
-									<div id="accordion-cis3" class="panel-collapse collapse">
-										<div class="panel-body">The SAML Identity Provider is an web application that creates, maintains, and manages identity information for principals and provides principal authentication to other service providers within a federation, such as with web browser profiles. It can also be used for non-browser profile, i.e. API authentication, although less frequently.</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis4" class="collapsed">
-												<i class="fa fa-hdd-o" aria-hidden="true"></i>
-												Multi-Factor Authentication
-											</a>
-										</h4>
-									</div>
-									<div id="accordion-cis4" class="panel-collapse collapse">
-										<div class="panel-body">A TOTP (Time based one-time password) is by default integrated with the SAML Identity Provider as the second authentication factor. It sends a 6-digit token to the user through text or email services.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-cis" href="#accordion-cis5" class="collapsed">
-												<i class="fa fa-user" aria-hidden="true"></i> Multi-Tenancy User/Device Management
-											</a>
-										</h4>
-									</div>
-									<div id="accordion-cis5" class="panel-collapse collapse">
-										<div class="panel-body">The standard user and device lifecycle management is fully supported. In addition, multi-tenancy provides data segregation and low maintenance for shared environment. </div>
-									</div>
-								</div>
-							</div>
-							<!-- accordion end -->
-
-							<h4 class="title">Chip Design</h4>
-							<!-- accordion start -->
-							<div class="panel-group collapse-style-1" id="accord-chip">
-								<div class="panel panel-default" >
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip1" class="collapsed">
-												PUF (Alpha)
-											</a>
-										</h4>
-									</div>
-									<div id="accord-chip1" class="panel-collapse collapse">
-										<div class="panel-body">
-											PUF, namely physically unclonable functionality, is the “silicon biometrics” that exploit the intrinsic and ubiquitous variations in semiconductor integrated circuits (IC) to generate random but unique, unpredictable while reproducible, and most importantly, unclonable hardware fingerprints. Even under the identical manufacture process, each IC is actually different due to the physical variability stemmed from the ultra-large scale integration (hundreds of millions of transistors integrated into one silicon chip) and uncontrollable non-uniformity in nanoscale device characteristics. PUF leverages this physical variability for low-cost, small-footprint, energy-efficient authentication and cryptographic key generation suitable for IoT platforms.
-											<br><br>
-											A PUF based key does not require physical storage and is generated on the device at the time of usage. It’s free from physical hacking and excels in situation when the devices are deployed without physical security. It can be used as a symmetric key or a private key when the corresponding public key is accessible by other devices or computer systems. PUF provides an alternative secure yet much more simplified solution for key management and does not change our dependency on cryptograph.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading pink">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accord-chip" href="#accord-chip2" class="collapsed">
-												Compressive Sensing (Alpha)
-											</a>
-										</h4>
-									</div>
-									<div id="accord-chip2" class="panel-collapse collapse">
-										<div class="panel-body">
-											Compressive Sensing (CS) is a signal processing technique for efficiently acquiring and reconstructing a signal. This is based on the principle that, through optimization, the sparsity of a signal can be exploited to recover it from far fewer samples than required.
-											<br><br>
-											In Soteria Networks, we have developed a secured compressing sensing technology that achieves compression and encryption in a unitary step inside the chip. The transformed signal can be transported through non-SSL network and reconstructed on the server side.
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- accordion end -->
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- section start -->
-			<!-- ================ -->
-
-			<section id="support" class="main-container">
-				<div class="container">
-					<h3>Solutions</h3>
-					<div class="separator-2"></div>
-
-					<div class="row main">
-
-						<div class="col-sm-3" >
-							<a data-target="#howCarousel" data-slide-to="0" class="active highlight">
-								<span class="fa-stack fa-1x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<strong class="fa-stack-1x fa-stack-text fa-inverse">1</strong>
-								</span>
-								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h4>Device Authentication</h4>
-								<p><i class="fa fa-lock fa-3x icn"></i>
-									PUF based key is the root of truth. A fake device can not impersonate a legitimate one since the PUF key can not be directly accessed.
-								</p>
-							</a>
-						</div>
-
-						<div class="col-sm-3">
-							<a data-target="#howCarousel" data-slide-to="1" class="active">
-								<span class="fa-stack fa-1x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<strong class="fa-stack-1x fa-stack-text fa-inverse">2</strong>
-								</span>
-								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h4>Video Monitoring</h4>
-								<p>
-									<i class="fa fa-wifi fa-3x icn"></i>
-									The video frames are compressed using a security key. Only the sever with the same key can reconstruct the video content.
-								</p>
-							</a>
-						</div>
-
-						<div class="col-sm-3">
-							<a data-target="#howCarousel" data-slide-to="2" class="active">
-
-								<span class="fa-stack fa-1x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<strong class="fa-stack-1x fa-stack-text fa-inverse">3</strong>
-								</span>
-								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h4>Anomaly Detection</h4>
-								<p>
-									<i class="fa fa-search fa-3x icn"></i>
-									Compressive Sensing needs much less audio signals to analyze and identify problems originated from systems.
-								</p>
-							</a>
-						</div>
+        .complete .main{
+            height:auto;
+            min-height: calc(100% - 35px);
+            overflow: visible;
+        }
 
 
-						<div class="col-sm-3">
-							<a data-target="#howCarousel" data-slide-to="3" class="active">
-								<span class="fa-stack fa-1x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<strong class="fa-stack-1x fa-stack-text fa-inverse">4</strong>
-								</span>
-								<div class="arrow-body"></div><div class="arrow-head"></div>
-								<h4>Data Visualization</h4>
-								<p>
-									<i class="fa fa-television fa-3x icn"></i>
-									Our IoT operation portal implements advanced reconstruction algorithms for audio and video.
-								</p>
-							</a>
-						</div>
-					</div>
 
-					<div class="row">
-						<br>
-						<div class="col-sm-12 " >
-
-							<div id="howCarousel" class="carousel slide container" data-ride="carousel">
-
-								<div class="carousel-inner">
-
-									<div class="item active">
-										<div>
-											This is very similar to how SSL authentication works. A server holds the device PUF public key obtained through an interface on the chip. When the device authenticates itself with the server, it sends an authentication request to the server. The server will encrypt a hash value using the PUF public key and send it back. The device will then decrypt the value and send that back to the server. The server then compares the hash value from the device with the original hash value from the server. If they are identical, the device is authenticated.
-										</div>
-									</div>
-									<div class="item">
-										<div>
-											Compressive Sensing is especially effective with analogy signal sampling and processing. With the inherent security, it can be an effective alternative to the
-											mainstream methods, such as H264/5.
-										</div>
-									</div>
-
-									<div class="item">
-										<div>
-											One of the advantages of CS is that CS doesn't follow Nyquist principle - The sample rate must be more than twice the signal bandwidth in order to accurately reconstruct the signal. So, it increases the sampling efficiency significantly and reduces data analysis cost in anomaly detection.
-										</div>
-									</div>
-									<div class="item">
-										<div>
-											Data processed by CS requires a reconstruction on the server side. The trade off for CS is less processing on the
-											device and more processing on the server. Since IoT devices normaly has limited power supply and computing capacity,
-											CS works well with IoT devices.
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- section end -->
+        </style>
+      
 
 
-			<section id="casestudy" class="main-container">
-				<div class="container">
-					<h3>Case Study</h3>
 
-					<div class="bs-callout bs-callout-warning" >
-						<h4 data-toggle="collapse" href="#casestudy1" aria-expanded="false" aria-controls="casestudy1" class="collapsed">
-							Smart Manufacturing
-							<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i>
-						</h4>
-						<p class="collapse" id="casestudy1">
-							Smart manufacturing is the core of Industry 4.0. IoT device connectivity to the cloud offers many possibilities to improve manufacturing process. In
-							precision finishing, in-process and post-process quality control requires part variations to be converted to CNC control offsets. Manual configuration
-							and adjustment are time consuming, error prone and don't scale.
-							<br><br>
-							We are building a platform for our strategic partner XDC Industries to visualize their factory floors, automate their QA process and help them predict
-							when a machine requires maintenance and when a test procedure needs to be executed.
-						</p>
-					</div>
-
-					<div class="bs-callout bs-callout-warning" >
-						<h4 data-toggle="collapse" href="#casestudy3" aria-expanded="false" aria-controls="casestudy3" class="collapsed">
-							Federated Remote IoT Access
-							<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-down pull-right"></i>
-						</h4>
-						<p class="collapse" id="casestudy3">
-							A Fortune 500 company provides monitoring and diagnosis service to hundreds of thousands of storage servers hosted on the customer sites. Customer security concern requires support personnel visit that results in high cost and slow service. A federated remote access solution is desired to allow customers to participate in the decision process.
-							<br><br>
-							With the first rollout of a solution designed by us, it eliminates annual loss of 22,000 man hours, translating to $2M in savings. Long term benefit also includes saved additional license cost each year.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- section start -->
-			<!-- ================ -->
-			<section class="main-container clearfix">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="call-to-action well">
-								<h2 class="title">We offer more possibilities to meet your every need</h2>
-								<div class="row">
-									<div class="col-sm-9">
-										<p>Our chip level technologies add powerful features to IoT solutions, including security, cloud computing and artificial intelligence. Combined with our Cloud Integration Platform, it forms an enclosed eco system.</p>
-									</div>
-									<div class="col-sm-3 text-right">
-										<a href="#footer" class="btn btn-lg btn-default btn-animated">Learn More<i class="fa fa-arrow-right pl-20"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- section end -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" >
 
 
-			<!-- section start -->
-			<!-- ================ -->
 
-			<section id="whyus"  class="main-container clearfix">
-				<div class="container">
-					<h3>Why <strong>Choose</strong> Us?</h3>
-					<div class="separator-2"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<!-- accordion start -->
-							<div class="panel-group collapse-style-1" id="accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
-												<i class="fa fa-bold pr-10"></i>Flexibility &amp; Scalability
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="panel-collapse collapse collapse">
-										<div class="panel-body">
-											Choose the components from our micro service based suite to fit your needs and achieve system capacity elasticity.
-											Micro-service architecture offers highly customizable packages and enables flexible integration with customers’
-											existing systems. Micro services are easy to replace, organized around capabilities, and can be implemented using
-											different programming languages, databases, hardware and software environment, depending on what fits best. Our
-											platform supports continuous delivery of new features.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-												<i class="fa fa-leaf pr-10"></i>Powerful platform &amp; Operation Effiency
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="panel-collapse collapse">
-										<div class="panel-body">
-											Unified platform protecting enterprise applications, data and IoT devices and supporting identity relationship
-											management (IRM) between users and devices.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-												<i class="fa fa-html5 pr-10"></i>Cost Effectiveness &amp; Ease of Use
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="panel-collapse collapse">
-										<div class="panel-body">
-											High-quality product and support personnel with appropriate pricing. Responsive design and intuitive work
-											flow reduce training budget. Great emphasis on DevOps using the industry leading practices.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
-												<i class="fa fa-life-ring pr-10"></i>Support 24/7
-											</a>
-										</h4>
-									</div>
-									<div id="collapseFour" class="panel-collapse collapse">
-										<div class="panel-body">
-											We offer 24/7 service support on our product in production. Customer satisfaction is our ultimate goal.
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- accordion end -->
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- section end -->
+</head>
 
 
-			<!-- footer top end -->
-			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
-			<!-- ================ -->
 
-			<footer id="footer" class="clearfix ">
+<body class="front-page gradient-background-header">
 
-				<!-- .footer start -->
-				<!-- ================ -->
-				<div class="footer">
-					<div class="container">
-						<div class="footer-inner">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="footer-content">
 
-										<div class="logo-footer"><img id="logo-footer" src="images/1_vertical.185x133.png" alt=""></div>
-										<p>Soteria Networks is technology firm specializing in IoT, Security, Cloud Computing and AI. We are building the next generation smart manufacturing solutions to create unique customer experience and maximize their return on investment</p>
-										<div class="separator-2"></div>
 
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="footer-content">
-										<h2 class="title">Find Us</h2>
-										<div class="separator-2"></div>
-										<p>Soteria Networks is an active player in building smart manufacturing solutions. </p>
-										<ul class="social-links circle animated-effect-1">
-											<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/soteria-networks"><i class="fa fa-linkedin"></i></a></li>
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com/soterianetworks"><i class="fa fa-twitter"></i></a></li>
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com/soterianetworks"><i class="fa fa-facebook"></i></a></li>
-										</ul>
-										<div class="separator-2"></div>
-										<ul class="list-icons">
-											<li><i class="fa fa-map-marker pr-10 text-default"></i>190 N Main Street, Suite 302, Natick, MA 01760</li>
-											<li><i class="fa fa-phone pr-10 text-default"></i> +1 508-433-6969</li>
-											<li><a href="mailto:info@soterianetworks.com"><i class="fa fa-envelope-o pr-10"></i>info@soterianetworks.com</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- .footer end -->
+<div class="loading">
+	  <img style="display:block;margin:300px auto 0px auto;" src="images/loading-icon.svg">
+</div>
 
-				<!-- .subfooter start -->
-				<!-- ================ -->
-				<div class="subfooter">
-					<div class="container">
-						<div class="subfooter-inner">
-							<div class="row">
-								<div class="col-md-12">
-									<p class="text-center">Copyright © 2016 Soteria Networks, Inc. All Rights Reserved</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- .subfooter end -->
+<div class="main" ng-controller="HeaderCtrl">
+	<div>
+      <header>
+          <div class="container">
+              <div class="splash"  ng-class="class"> <img> </div>
+              
+              <h2 class="title">{{title}}</h2>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-3 ">
+                      <div class="header-left clearfix">
+                          <a href="#!home"><img id="logo_img" src="images/horizontal.png" alt="Soteria Networks"></a>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-9">
+                      <div class="header-right clearfix">
+                          <nav>
+                              <ul id="navigation">
+                                  <li><a ng-class="getClass('/home')" href="#!home">Home</a></li>
+                                  <li><a ng-class="getClass('/products')" href="#!products">Products</a></li>
+                                  <li><a ng-class="getClass('/solutions')" href="#!solutions">Solutions</a></li>
+                                  <li><a ng-class="getClass('/aboutus')" href="#!aboutus">About Us</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
 
-			</footer>
-			<!-- footer end -->
-			
-		</div>
-		<!-- page-wrapper end -->
+      <div id="page-start" >
+          <div ng-view ></div>
+      </div>
+	</div>
+</div>
+<footer id="footer">Copyright © 2016-2018 Soteria Networks, Inc. All Rights Reserved</footer>
 
-		<!-- JavaScript files placed at the end of the document so the pages load faster -->
-		<!-- ================================================== -->
-		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="plugins/modernizr.js"></script>
-		<!-- jQuery Revolution Slider  -->
-		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<!-- Isotope javascript -->
-		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
-		<!-- Magnific Popup javascript -->
-		<script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<!-- Appear javascript -->
-		<script type="text/javascript" src="plugins/waypoints/jquery.waypoints.min.js"></script>
-		<!-- Count To javascript -->
-		<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
-		<!-- Parallax javascript -->
-		<script src="plugins/jquery.parallax-1.1.3.js"></script>
-		<!-- Contact form -->
-		<script src="plugins/jquery.validate.js"></script>
-		<!-- Morphext -->
-		<script type="text/javascript" src="plugins/morphext/morphext.min.js"></script>
-		<!-- Background Video -->
-		<script src="plugins/vide/jquery.vide.js"></script>
-		<!-- SmoothScroll javascript -->
-		<script type="text/javascript" src="plugins/jquery.browser.js"></script>
-		<script type="text/javascript" src="plugins/SmoothScroll.js"></script>
-		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="js/template.js"></script>
-		<!-- Custom Scripts -->
-		<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="plugins/jquery.min.js"></script>
 
-	</body>
+<script type="text/javascript" src="js/angular/angular-1.7.4.js"></script>
+<script type="text/javascript" src="js/angular/angular-route-1.7.4.js"></script>
+<script type="text/javascript" src="js/angular/angular-animate-1.7.4.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
 </html>
 
 
 
-
-<script>
-
-	$(function(){
-		$('#howCarousel').carousel({interval: 0});
-		initHowAutoScroll();
-		initHowClickHandler()
-		initSectionFinder();
-
-
-
-	});
-
-
-
-	function initSectionFinder(){
-
-
-		$(".navbar-nav li a").click(function() {
-			var name = $(this).attr('data');
-			var pos = $("#" + name).offset().top - 10;
-
-			if ($(window).width()>767) pos -=  70;//for small screens, position section at the top(because there is no menu
-
-			$('html, body').animate({ scrollTop: pos }, 550);
-		});
-	}
-
-	function initHowClickHandler(){
-
-		$('#support a').click(function(){
-
-			clearInterval(intervalHowAutoScroll);
-
-			$('#support a').removeClass('highlight');
-			$(this).addClass('highlight');
-		});
-	}
-
-	var intervalHowAutoScroll;
-
-
-	function initHowAutoScroll(){
-		var i = 0;
-
-		intervalHowAutoScroll = setInterval(function(){
-
-			$('#howCarousel').carousel('next');
-
-			$('#support [data-slide-to='+i +']').removeClass('highlight');
-			i = i<3 ? i+1:0;
-			$('#support [data-slide-to='+i +']').addClass('highlight');
-
-		}, 6000);
-	}
-
-
-
-</script>
