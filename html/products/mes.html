@@ -1,0 +1,103 @@
+
+
+
+<style>
+
+  #mes li{
+      list-style-type: square;
+      padding-bottom: 20px;
+  }
+
+  #mes #img {
+      width: 100%;
+      min-width: 300px;
+      max-width: 480px;
+      padding-right: 5px;
+      padding-bottom: 20px;
+      cursor: zoom-in;
+  }
+
+  #mes #img-full {
+      position:fixed;
+      top:0; bottom:0; right:0;left:0;
+      background: black;
+      z-index: 10000;
+      height:0;
+      padding:0px;
+      overflow:hidden;
+      opacity:0;
+      cursor: zoom-out;
+      transition: all .5s;
+  }
+
+  #mes #img-full.show {
+      height:100%;
+      opacity:1;
+      padding:10px;
+  }
+
+  @media (max-width: 570px)  {
+      #cip #img-full.show { padding:10px 0px; }
+  }
+
+  </style>
+  
+  <div id="mes" class="container"  ng-controller="Products-MES-Ctrl" >
+  
+  
+    <div class="row">
+        <div class="col-xs-12">
+              <div class="section">
+                  <h4>MES for Precision Finishing</h4>
+                  <br>
+                  <img id="img" class="pull-left" src="images/products/mes.png" ng-click="showFullImage=true">
+                  <div id="img-full" ng-class="{'show':showFullImage}" ng-click="showFullImage=false">
+                      <img ng-class="{'show':showFullImage}" ng-click="showFullImage=false"   src="images/products/mes-full.png">
+                  </div>
+
+                  <p>Our MES product is designed for customers in metal precision finishing sector.
+                     There are seven major modules: MDC (Machine Data Collection), PLM
+                      (Product Lifecycle Management),  Tool Management, APS (Advanced Planning & Scheduling),
+                      QAM (Quality Assurance Management), and WMS (Warehouse Management System). Together they optimize
+                      the resource usage, visualize the production progress and improve work efficiency.<br>
+                  </p>
+
+                  <li><b>Machine Data Collection (MDC)</b> collects machine status (down, idle, running,
+                    warning, error) and part count. Real time status and overall machine OEE are used for monitoring
+                    and planning purposes. The Part count is used to calculate order progress and offer transparent turnaround.
+                  </li>
+
+                  <li><b>Product Lifecycle Management (PLM)</b> is a central place for product specs, drawings, G-Code
+                      versioning, machine and tool requirements.
+                  </li>
+
+                  <li><b>Tool Management</b> keeps track of the cutting tool inventory and life span. </li>
+
+                  <li><b>Advanced Planning & Scheduling (APS)</b> uses machine availability, machine tool readiness,
+                      production progress, QA pass rate, and user defined events to generate work assignments automatically.
+                  </li>
+
+                  <li><b>Quality Assurance Management (QAM)</b> supported by real time QA data entry units, such as
+                      bluetooth calipers and automatic CMM stations, it provides real time quality tracking at batch
+                      level and supports quality issue back tracking.
+                  </li>
+
+                  <li><b>Warehouse Management System (WMS)</b> is integrated with handheld scanners and QR code printers.
+                      Workers  can label and track materials, parts and finished products on the workshop floors and at storage
+                      locations.
+                  </li>
+
+              </div>
+        </div>
+      
+
+    </div>
+  
+      
+  
+      
+  
+  </div>
+  
+  
+
