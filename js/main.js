@@ -1,9 +1,3 @@
-
-
-
-
-
-
 var app = angular.module("app", ["ngRoute", "ngAnimate"]);
 
 app.controller("HeaderCtrl", function($scope, $location) {
@@ -42,7 +36,7 @@ app.controller("Products-MES-Ctrl", function($scope, $location) {
 });
 
 app.controller("Products-IOT-Ctrl", function($scope, $location) {
-    $scope.$parent.$parent.title ="Products > IoT Platform"
+    $scope.$parent.$parent.title ="Products > IoT"
     $scope.$parent.$parent.class ="products-bg"
 });
 
