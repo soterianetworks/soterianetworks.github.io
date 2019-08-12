@@ -1,0 +1,33 @@
+/* 
+/* 
+/*  custom.css
+/*
+/*  If not using Gulp and Sass, add your custom CSS below then include it
+/*  in your page by adding a reference to assets/css/custom.css in the head of each page.
+/*
+*/
+
+div.card {
+  text-align: justify;
+}
+
+div p {
+  text-align: justify;
+}
+
+.bg-primary {
+  background-color: #005493 !important;
+}
+
+.btn-primary {
+  background-color: #0096FF !important;
+}
+
+section.has-divider .container{
+    padding-top: 1rem;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem; }
