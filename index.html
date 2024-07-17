@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Soteria Networks Inc. </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soteria Networks Machine Visioning, Enterprise Software Acceleration Platform, Automatic Measurement & Compensation System">
+    <meta name="description" content="Liquid Connector, Coupling and Valve Manurfacturing">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -194,7 +194,7 @@
         <div class="row my-4 my-md-8" data-aos="fade-up">
           <div >
             <h1 class="display-4">Soteria Networks </h1>
-            <h2 class="display-6">Cloud Computing & Artificial Intelligence</h2>
+            <h2 class="display-6">Spealizing in Liquid Connector Products & Technologies </h2>
             </p>
           </div>
         </div>
@@ -213,11 +213,12 @@
                 <div>
                     <h2 class="h1">About US</h2>
                   <p class="lead">
-                    Founded in 2016, Soteria Networks is prospering in Boston, a high-tech hub with the top-notch universities
-                    attracting millions of talents all over the world. With two wholly-owned subsidiary companies in Chengdu and
-                    Suzhou, our research and development never meet the sunset. Soteria Networks has build its own state of art
-                    software frameworks and engineering practices. We have developed products in the areas of cloud computing and
-                    machine visioning. 
+                    Founded in 2016, Soteria Networks has been methodically building up the core technical
+                    expertises in the area of liquid connectors, couplings and valves. The company has
+                    heavily invested in precision design and manufacturing，and developed the supporting
+                    software and automatic equipments.  We have already received a lot of recognization for
+                    our fast and reliable services. In the fast-growing liquid connector market, we stand
+                    ready to serve global customers.
                   </p>
                 </div>
             </div>
@@ -227,40 +228,6 @@
       <br>
       <br>
     </section>
-
-
-    <section class="pt-0">
-            <div class="container text-center">
-                <div class="row mb-5">
-                    <div class="col">
-                        <h5>Trusted by customers like</h5>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-9">
-                        <ul class="d-flex flex-wrap justify-content-center list-unstyled">
-<!--
-                          <li class="mx-3 mb-5">
-                            <img class="icon icon-lg" src="assets/img/customers/bbs.png"/>
-                          </li>
--->
-                            <li class="mx-3 mb-5 ">
-                                <a href="https://eshop.dellemc-solution.com/"><img class="icon icon-md" src="assets/img/customers/dell_logo.png"/></a>
-                            </li>
-                            <li class="mx-3 mb-5">
-                                <a href="http://www.fingu.com/"><img class="icon icon-md" src="assets/img/customers/fingu_logo.png"/></a>
-                            </li>
-                            <li class="mx-3 mb-5">
-                                <a href="http://www.xdc-industries.com/"><img class="icon icon-md" src="assets/img/customers/xintian_logo.jpeg"/></a>
-                            </li>
-                          <li class="mx-3 mb-5">
-                            <a href="http://www.sinomach.com.cn/"><img class="icon icon-md" src="assets/img/customers/guoji_logo.png"/></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     <footer class="pb-4 bg-primary text-light" id="anchorContact">
       <div class="container">
@@ -313,22 +280,32 @@
           </div>
           <div class="col-lg-8 col-xl-8 mt-3 mt-lg-0">
             <h5 class="text-left" >Send a Note </h5>
-            <form action="/forms/mailchimp.php" data-form-email novalidate>
+
+            <form action="https://api.web3forms.com/submit" method="POST" data-form-email novalidate>
               <div class="form-group">
+                <div class="col-12">
+                  <input type="hidden" name="access_key" value="fe00178c-445d-4a3f-bdef-cd4097bda3be">
+                </div>
                 <div class="col-12">
                   <input type="email" class="form-control mb-2" placeholder="Your Email Address" name="email" required>
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control mb-2" placeholder="Message" rows="2"></textarea>
+                  <textarea class="form-control mb-2" placeholder="Message" name="message" rows="2"></textarea>
                 </div>
                 <div class="col-12">
-                  <div class="d-none alert alert-success" role="alert" data-success-message>
-                    Thanks, a member of our team will be in touch shortly!
-                  </div>
-                  <div class="d-none alert alert-danger" role="alert" data-error-message>
-                    Please fill all fields correctly.
-                  </div>
-                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft"></div>
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" name="redirect" class="hidden" style="display: none;">
+                </div>
+                <div class="col-12">
+<!--                  <div class="d-none alert alert-success" role="alert" data-success-message>-->
+<!--                    Thanks, a member of our team will be in touch shortly!-->
+<!--                  </div>-->
+<!--                  <div class="d-none alert alert-danger" role="alert" data-error-message>-->
+<!--                    Please fill all fields correctly.-->
+<!--                  </div>-->
 
                   <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
                     <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -384,7 +361,7 @@
         <div class="row justify-content-center">
           <div class="col col-md-auto text-center">
             <small class="text-muted">
-              Copyright &copy;2016 - 2021 Soteria Networks, Inc. All Rights Reserved.</a>
+              Copyright &copy;2016 -  Soteria Networks, Inc. All Rights Reserved.</a>
             </small>
           </div>
         </div>
@@ -449,8 +426,6 @@
       });
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159426459-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -458,6 +433,47 @@
 
       gtag('config', 'UA-159426459-1');
     </script>
+
+  <script>
+      const form = document.getElementById('form');
+      const result = document.getElementById('result');
+
+      form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Sorry, something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+  </script>
 
   </body>
 
