@@ -281,7 +281,7 @@
           <div class="col-lg-8 col-xl-8 mt-3 mt-lg-0">
             <h5 class="text-left" >Send a Note </h5>
 
-            <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form" novalidate>
               <div class="form-group">
                 <div class="col-12">
                   <input type="hidden" name="access_key" value="fe00178c-445d-4a3f-bdef-cd4097bda3be">
@@ -296,16 +296,12 @@
                   <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </div>
                 <div class="col-12">
-                  <input type="hidden" name="redirect" value="https://www.soterianetworks.com/?result=success">
-<!--                  <input type="text" name="redirect" class="hidden" style="display: none;">-->
+                  <input type="hidden" name="redirect" value="https://www.soterianetworks.com/?result=success#form">
                 </div>
                 <div class="col-12">
-<!--                  <div class="d-none alert alert-success" role="alert" data-success-message>-->
-<!--                    Thanks, a member of our team will be in touch shortly!-->
-<!--                  </div>-->
-<!--                  <div class="d-none alert alert-danger" role="alert" data-error-message>-->
-<!--                    Please fill all fields correctly.-->
-<!--                  </div>-->
+                  <div class="d-none alert alert-success" id="alert">
+                    Thanks, a member of our team will be in touch shortly!
+                  </div>
 
                   <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
                     <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -435,50 +431,15 @@
 
       window.addEventListener('load', () => {
         const url = new URL(location.href)
-        console.log(url.searchParams.get('result'))
+        if (url.searchParams.get('result') === 'success') {
+          const ele = $('#alert')
+          ele.removeClass('d-none')
+          setTimeout(() => {
+            ele.addClass('d-none')
+          }, 3000)
+        }
       })
     </script>
-
-<!--  <script>-->
-<!--      const form = document.getElementById('form');-->
-<!--      const result = document.getElementById('result');-->
-
-<!--      form.addEventListener('submit', function(e) {-->
-<!--      e.preventDefault();-->
-<!--      const formData = new FormData(form);-->
-<!--      const object = Object.fromEntries(formData);-->
-<!--      const json = JSON.stringify(object);-->
-<!--      result.innerHTML = "Please wait..."-->
-
-<!--        fetch('https://api.web3forms.com/submit', {-->
-<!--                method: 'POST',-->
-<!--                headers: {-->
-<!--                    'Content-Type': 'application/json',-->
-<!--                    'Accept': 'application/json'-->
-<!--                },-->
-<!--                body: json-->
-<!--            })-->
-<!--            .then(async (response) => {-->
-<!--                let json = await response.json();-->
-<!--                if (response.status == 200) {-->
-<!--                    result.innerHTML = json.message;-->
-<!--                } else {-->
-<!--                    console.log(response);-->
-<!--                    result.innerHTML = json.message;-->
-<!--                }-->
-<!--            })-->
-<!--            .catch(error => {-->
-<!--                console.log(error);-->
-<!--                result.innerHTML = "Sorry, something went wrong!";-->
-<!--            })-->
-<!--            .then(function() {-->
-<!--                form.reset();-->
-<!--                setTimeout(() => {-->
-<!--                    result.style.display = "none";-->
-<!--                }, 3000);-->
-<!--            });-->
-<!--    });-->
-<!--  </script>-->
 
   </body>
 
