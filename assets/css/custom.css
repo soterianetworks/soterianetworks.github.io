@@ -61,3 +61,16 @@ section.has-divider .container{
 .btn-primary{
     background-color: #20A8D2 !important;
 }
+
+.product-img-w-50 {
+    width: 60%;
+}
+
+.img-container {
+    min-height: 180px;
+    max-height: 180px;
+}
+
+.pt-8,
+.py-8 {
+    padding-top: 7.5rem !important; }
