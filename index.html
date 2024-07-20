@@ -737,10 +737,10 @@
     <!-- Removes page load animation when window is finished loading -->
     <script type="text/javascript">
       window.addEventListener("load", function () {
-        // const cate = document.querySelector("#anchorProducts > div.row.justify-content-center.mb-4 > div > ul > li:nth-child(1) > a");
-        // const ev = document.createEvent('MouseEvents');
-        // ev.initEvent('click', false, true);
-        // cate.dispatchEvent(ev);
+        const cate = document.querySelector("#anchorProducts > div.row.justify-content-center.mb-4 > div > ul > li:nth-child(1) > a");
+        const ev = document.createEvent('MouseEvents');
+        ev.initEvent('click', false, true);
+        cate.dispatchEvent(ev);
         document.querySelector('body').classList.add('loaded');
       });
     </script>
