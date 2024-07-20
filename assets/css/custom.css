@@ -70,3 +70,27 @@ section.has-divider .container{
 .pt-8,
 .py-8 {
     padding-top: 7.5rem !important; }
+
+#anchorProducts > div.row.mb-4.text-light.text-center > div > h2 {
+    color: #075a9e;
+}
+
+#anchorProducts > div.row.justify-content-center.mb-4 > div > ul > li > a {
+    color: #075a9e!important;
+}
+
+#anchorProducts > div:nth-child(3) > div > a > h4 {
+    color: #075a9e;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#anchorProducts > div:nth-child(3) > div > a > div.text-small.text-muted {
+    color: #000!important;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.title-color-blue {
+    color: #075a9e!important;
+}
