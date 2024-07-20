@@ -55,8 +55,11 @@ section.has-divider .container{
 .bg-primary {
   background-color: #075A9E !important; }
 
+.bg-primary-alt{
+    background-color: #F7F7F7 !important;}
+
 .bg-primary-2 {
-  background-color: #F3F5FB !important; }
+  background-color: #F7F7F7 !important; }
 
 .product-img-w-50 {
     width: 60%;
