@@ -37,3 +37,71 @@ section.has-divider .container{
     margin-right: 0px;
     margin-left: 0px;
 }
+
+.nav-link {
+    color: #fff!important;
+}
+
+/*
+ soteria dark color  075A9E
+ soteria light color  20A8D2
+ icwind dark color 054C88
+ icwind light color 40D1F8
+ head image gray color 364249
+*/
+.navbar[data-sticky="top"].scrolled.navbar-dark {
+    background: #075A9E !important; }
+
+.bg-primary {
+  background-color: #075A9E !important; }
+
+.bg-primary-alt{
+    background-color: #F7F7F7 !important;}
+
+.bg-primary-2 {
+  background-color: #F7F7F7 !important; }
+
+.product-img-w-50 {
+    width: 60%;
+}
+
+.img-container {
+    min-height: 180px;
+    max-height: 180px;
+}
+
+.pt-8,
+.py-8 {
+    padding-top: 7.5rem !important; }
+
+#anchorProducts > div.row.mb-4.text-light.text-center > div > h2 {
+    color: #075a9e;
+}
+
+#anchorProducts > div.row.justify-content-center.mb-4 > div > ul > li > a {
+    color: #075a9e!important;
+}
+
+#anchorProducts > div:nth-child(3) > div > a > h4 {
+    color: #075a9e;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#anchorProducts > div:nth-child(3) > div > a > div.text-small.text-muted {
+    color: #000!important;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.title-color-blue {
+    color: #075a9e!important;
+}
+
+.carousel-cell {
+    width: 609px;
+}
+
+.card {
+    height: 376px;
+}
