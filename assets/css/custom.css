@@ -94,3 +94,11 @@ section.has-divider .container{
 .title-color-blue {
     color: #075a9e!important;
 }
+
+.carousel-cell {
+    width: 609px;
+}
+
+.card {
+    height: 376px;
+}
