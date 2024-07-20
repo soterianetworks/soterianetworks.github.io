@@ -37,3 +37,27 @@ section.has-divider .container{
     margin-right: 0px;
     margin-left: 0px;
 }
+
+.nav-link {
+    color: #fff!important;
+}
+
+/*
+ soteria dark color  075A9E
+ soteria light color  20A8D2
+ icwind dark color 054C88
+ icwind light color 40D1F8
+ head image gray color 364249
+*/
+.navbar[data-sticky="top"].scrolled.navbar-dark {
+    background: #075A9E !important; }
+
+.bg-primary {
+  background-color: #364249 !important; }
+
+.bg-primary-2 {
+  background-color: #20A8D2 !important; }
+
+.btn-primary{
+    background-color: #20A8D2 !important;
+}
