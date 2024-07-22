@@ -109,3 +109,11 @@ section.has-divider .container{
 .img-fluid {
     max-height: 293px;
 }
+
+.flickity-content-center > div {
+    margin: auto;
+}
+
+.flickity-page-dots > li {
+    background: #000!important;
+}
