@@ -36,11 +36,14 @@
               fill="#212529" />
             </svg>
           </button>
-          <div class="collapse navbar-collapse justify-content-end">
+          <div id="navbarCrumb" class="collapse navbar-collapse justify-content-end">
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item ">
                   <a href="#anchorProducts" class="nav-link" aria-expanded="false" aria-haspopup="true">Products</a>
+                </li>
+                <li class="nav-item ">
+                  <a href="#anchorIndustries" class="nav-link" aria-expanded="false" aria-haspopup="true">Industries</a>
                 </li>
                 <li class="nav-item ">
                   <a href="#anchorServices" class="nav-link" aria-expanded="false" aria-haspopup="true">Services</a>
@@ -79,7 +82,7 @@
       </div>
     </section>
 
-    <section class="text-left" id="anchorStatement">
+    <section class="text-left">
       <div class="container">
         <div class="row justify-content-center">
           <div>
@@ -95,10 +98,10 @@
       </div>
     </section>
 
-    <section class="pt-8 bg-primary-2"  id="anchorProducts">
-      <div class="container">
-        <div class="row mb-4 text-light text-center">
-          <div class="col">
+    <section class="bg-primary-2"  id="anchorProducts">
+      <div class="container pt-5">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-xl-8 col-lg-9">
             <h2 class="mx-xl-6 title-color-blue h1">Our Products</h2>
           </div>
         </div>
@@ -345,8 +348,8 @@
       </div>
     </section>
 
-    <section class="o-hidden">
-      <div class="container pb-4 text-light">
+    <section class="o-hidden"  id="anchorIndustries">
+      <div class="container pt-5 text-light">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-xl-8 col-lg-9">
             <h2 class=" mx-xl-6 title-color-blue h1">Industrial Applications</h2>
@@ -709,6 +712,10 @@
         ev.initEvent('click', false, true);
         cate.dispatchEvent(ev);
         document.querySelector('body').classList.add('loaded');
+      });
+
+      $( '#navbarCrumb a' ).on('click', function(){
+        $('#navbarCrumb').removeClass('show');
       });
     </script>
 
